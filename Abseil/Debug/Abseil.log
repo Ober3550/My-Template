@@ -1,0 +1,212 @@
+﻿  cycleclock.cc
+  exponential_biased.cc
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\exponential_biased.cc(69,10): warning C4244: 'return': conversion from 'double' to 'int64_t', possible loss of data
+  low_level_alloc.cc
+  periodic_sampler.cc
+  raw_logging.cc
+  scoped_set_env.cc
+  spinlock.cc
+  spinlock_wait.cc
+  strerror.cc
+  sysinfo.cc
+  thread_identity.cc
+  throw_delegate.cc
+  unscaledcycleclock.cc
+  hashtablez_sampler.cc
+  hashtablez_sampler_force_weak_definition.cc
+  raw_hash_set.cc
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\bits.h(89,32): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned long', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\bits.h(176,28): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned long', possible loss of data
+  test_instance_tracker.cc
+  stacktrace.cc
+  symbolize.cc
+  city.cc
+  Generating Code...
+  Compiling...
+  hash.cc
+  int128.cc
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\bits.h(89,32): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned long', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\bits.h(176,28): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned long', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\numeric\int128.cc(221,24): warning C4244: 'argument': conversion from 'std::streamsize' to 'const unsigned int', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\numeric\int128.cc(225,27): warning C4244: 'argument': conversion from 'std::streamsize' to 'const unsigned int', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\numeric\int128.cc(227,27): warning C4244: 'argument': conversion from 'std::streamsize' to 'const unsigned int', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\numeric\int128.cc(318,26): warning C4244: 'argument': conversion from 'std::streamsize' to 'const unsigned int', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\numeric\int128.cc(322,31): warning C4244: 'argument': conversion from 'std::streamsize' to 'const unsigned int', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\numeric\int128.cc(325,31): warning C4244: 'argument': conversion from 'std::streamsize' to 'const unsigned int', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\numeric\int128.cc(327,31): warning C4244: 'argument': conversion from 'std::streamsize' to 'const unsigned int', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\numeric\int128.cc(331,29): warning C4244: 'argument': conversion from 'std::streamsize' to 'const unsigned int', possible loss of data
+  status.cc
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\bits.h(89,32): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned long', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\bits.h(176,28): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned long', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\status\status.cc(81,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\status\status.cc(170,31): warning C4018: '<': signed/unsigned mismatch
+  status_payload_printer.cc
+  ascii.cc
+  charconv.cc
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\bits.h(89,32): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned long', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\bits.h(176,28): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned long', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\strings\charconv.cc(151,27): warning C4244: 'argument': conversion from 'uint32_t' to 'float', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\strings\charconv.cc(151,56): warning C4244: 'argument': conversion from 'uint32_t' to 'float', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\strings\charconv.cc(630,17): warning C4244: '=': conversion from 'double' to 'FloatType', possible loss of data
+          with
+          [
+              FloatType=float
+          ]
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\strings\charconv.cc(686): message : see reference to function template instantiation 'absl::from_chars_result absl::`anonymous-namespace'::FromCharsImpl<float>(const char *,const char *,FloatType &,absl::chars_format)' being compiled
+          with
+          [
+              FloatType=float
+          ]
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\strings\charconv.cc(315,14): warning C4244: '=': conversion from 'double' to 'FloatType', possible loss of data
+          with
+          [
+              FloatType=float
+          ]
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\strings\charconv.cc(636): message : see reference to function template instantiation 'bool absl::`anonymous-namespace'::HandleEdgeCase<FloatType>(const absl::strings_internal::ParsedFloat &,bool,FloatType *)' being compiled
+          with
+          [
+              FloatType=float
+          ]
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\strings\charconv.cc(686): message : see reference to function template instantiation 'absl::from_chars_result absl::`anonymous-namespace'::FromCharsImpl<float>(const char *,const char *,FloatType &,absl::chars_format)' being compiled
+          with
+          [
+              FloatType=float
+          ]
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\strings\charconv.cc(337,14): warning C4244: '=': conversion from 'double' to 'FloatType', possible loss of data
+          with
+          [
+              FloatType=float
+          ]
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\strings\charconv.cc(641): message : see reference to function template instantiation 'void absl::`anonymous-namespace'::EncodeResult<FloatType>(const absl::`anonymous-namespace'::CalculatedFloat &,bool,absl::from_chars_result *,FloatType *)' being compiled
+          with
+          [
+              FloatType=float
+          ]
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\strings\charconv.cc(340,51): warning C4244: 'argument': conversion from 'const uint64_t' to 'uint32_t', possible loss of data
+  cord.cc
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\bits.h(89,32): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned long', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\bits.h(176,28): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned long', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\strings\cord.cc(170,13): warning C4267: 'return': conversion from 'size_t' to 'uint8_t', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\strings\cord.cc(926,56): warning C4267: '=': conversion from 'size_t' to 'char', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\strings\cord.cc(1135,63): warning C4267: '=': conversion from 'size_t' to 'char', possible loss of data
+  escaping.cc
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\bits.h(89,32): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned long', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\bits.h(176,28): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned long', possible loss of data
+  charconv_bigint.cc
+  charconv_parse.cc
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\charconv_parse.cc(379,26): warning C4018: '>=': signed/unsigned mismatch
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\charconv_parse.cc(498): message : see reference to function template instantiation 'absl::strings_internal::ParsedFloat absl::strings_internal::ParseFloat<10>(const char *,const char *,absl::chars_format)' being compiled
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\charconv_parse.cc(382,33): warning C4018: '>': signed/unsigned mismatch
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\charconv_parse.cc(402,25): warning C4018: '>=': signed/unsigned mismatch
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\charconv_parse.cc(416,29): warning C4018: '>=': signed/unsigned mismatch
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\charconv_parse.cc(419,36): warning C4018: '>': signed/unsigned mismatch
+  escaping_conversions.cc
+  memutil.cc
+  ostringstream.cc
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\ostringstream.cc(30,17): warning C4244: 'argument': conversion from 'std::streamsize' to 'const unsigned int', possible loss of data
+  pow10_helper.cc
+  arg.cc
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\bits.h(89,32): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned long', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\bits.h(176,28): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned long', possible loss of data
+  bind.cc
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\str_format\bind.cc(224,20): warning C4018: '>': signed/unsigned mismatch
+  extension.cc
+  float_conversion.cc
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\bits.h(89,32): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned long', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\bits.h(176,28): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned long', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\str_format\float_conversion.cc(334,39): warning C4244: '=': conversion from 'uint64_t' to 'char', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\str_format\float_conversion.cc(348,18): warning C4244: '=': conversion from 'uint64_t' to 'char', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\str_format\float_conversion.cc(363,51): warning C4244: '=': conversion from 'Int' to 'char', possible loss of data
+          with
+          [
+              Int=uint64_t
+          ]
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\str_format\float_conversion.cc(399,18): warning C4244: '=': conversion from 'uint64_t' to 'char', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\str_format\float_conversion.cc(408,54): warning C4244: '=': conversion from 'Int' to 'char', possible loss of data
+          with
+          [
+              Int=uint64_t
+          ]
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\str_format\float_conversion.cc(445,52): warning C4018: '<=': signed/unsigned mismatch
+  output.cc
+  parser.cc
+  Generating Code...
+  Compiling...
+  utf8.cc
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\utf8.cc(30,22): warning C4244: '=': conversion from 'char32_t' to 'char', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\utf8.cc(37,22): warning C4244: '=': conversion from 'char32_t' to 'char', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\utf8.cc(46,22): warning C4244: '=': conversion from 'char32_t' to 'char', possible loss of data
+  match.cc
+  numbers.cc
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\bits.h(89,32): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned long', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\bits.h(176,28): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned long', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\strings\numbers.cc(396,17): warning C4244: 'initializing': conversion from 'double' to 'uint64_t', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\strings\numbers.cc(410,23): warning C4244: 'initializing': conversion from 'double' to 'uint64_t', possible loss of data
+  string_view.cc
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\strings\string_view.cc(66,18): warning C4244: 'initializing': conversion from 'std::streamsize' to 'size_t', possible loss of data
+  str_cat.cc
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\bits.h(89,32): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned long', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\bits.h(176,28): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned long', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\strings\str_cat.cc(59,19): warning C4244: '=': conversion from 'uint64_t' to 'char', possible loss of data
+  str_replace.cc
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\bits.h(89,32): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned long', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\bits.h(176,28): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned long', possible loss of data
+  str_split.cc
+  substitute.cc
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\bits.h(89,32): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned long', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\bits.h(176,28): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned long', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\strings\substitute.cc(149,19): warning C4244: '=': conversion from 'uint64_t' to 'char', possible loss of data
+  create_thread_identity.cc
+  graphcycles.cc
+  per_thread_sem.cc
+  waiter.cc
+  mutex.cc
+  civil_time.cc
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\bits.h(89,32): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned long', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\bits.h(176,28): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned long', possible loss of data
+  clock.cc
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\time\clock.cc(546,18): warning C4244: 'argument': conversion from 'int64_t' to 'DWORD', possible loss of data
+  duration.cc
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\time\duration.cc(212,36): warning C4244: 'argument': conversion from 'double' to 'int64_t', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\time\duration.cc(648,17): warning C4244: '=': conversion from 'time_t' to 'long', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\time\duration.cc(744,21): warning C4244: 'initializing': conversion from 'double' to 'int64_t', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\time\duration.cc(745,20): warning C4244: 'initializing': conversion from 'double' to 'int64_t', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\time\duration.cc(249,46): warning C4244: 'argument': conversion from 'int64_t' to 'const _Ty', possible loss of data
+          with
+          [
+              _Ty=double
+          ]
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\time\duration.cc(460): message : see reference to function template instantiation 'absl::Duration absl::`anonymous-namespace'::ScaleDouble<std::multiplies>(absl::Duration,double)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\chrono(632): message : see reference to class template instantiation 'std::chrono::duration<double,std::ratio<1,1>>' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\chrono(178): message : see reference to class template instantiation 'std::chrono::duration<__int64,std::nano>' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\chrono(610): message : see reference to class template instantiation 'std::chrono::time_point<std::chrono::steady_clock,std::chrono::nanoseconds>' being compiled
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\time\duration.cc(263,16): warning C4244: 'initializing': conversion from 'double' to 'int64_t', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\time\duration.cc(268,32): warning C4244: 'argument': conversion from 'int64_t' to 'double', possible loss of data
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\time\duration.cc(268,21): warning C4244: 'argument': conversion from 'int64_t' to 'double', possible loss of data
+  format.cc
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\time\format.cc(67,45): warning C4244: 'initializing': conversion from '_Rep' to 'uint32_t', possible loss of data
+          with
+          [
+              _Rep=int_fast64_t
+          ]
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\time\format.cc(67,25): warning C4244: 'initializing': conversion from '_Rep' to 'const uint32_t', possible loss of data
+          with
+          [
+              _Rep=int_fast64_t
+          ]
+  civil_time_detail.cc
+  time_zone_fixed.cc
+  time_zone_format.cc
+  Generating Code...
+  Compiling...
+  time_zone_if.cc
+  time_zone_impl.cc
+  time_zone_info.cc
+  time_zone_libc.cc
+  time_zone_lookup.cc
+  time_zone_posix.cc
+  zone_info_source.cc
+  time.cc
+C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\time\time.cc(318,17): warning C4244: '=': conversion from 'time_t' to 'long', possible loss of data
+  Generating Code...
+  Abseil.vcxproj -> C:\Users\ober3\source\repos\Imgui Template\Debug\Abseil.lib

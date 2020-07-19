@@ -1,0 +1,1096 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AEE95E50-8F22-3C6C-8C91-761475F7803A}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/ober3/source/repos/Imgui Template/Imgui Template/abseil/abseil-cpp-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/ober3/source/repos/Imgui Template/Imgui Template/abseil/abseil-cpp-master" "-BC:/Users/ober3/source/repos/Imgui Template/Imgui Template/abseil/abseil-cpp-master/absl" --check-stamp-file "C:/Users/ober3/source/repos/Imgui Template/Imgui Template/abseil/abseil-cpp-master/absl/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CheckIncludeFile.cxx.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.16\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\CMake\AbseilDll.cmake;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\CMake\AbseilHelpers.cmake;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\CMake\AbseilInstallDirs.cmake;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\CMake\Googletest\CMakeLists.txt.in;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\CMake\Googletest\DownloadGTest.cmake;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\CMake\abslConfig.cmake.in;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\CMakeFiles\3.16.0-rc3\CMakeCXXCompiler.cmake;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\CMakeFiles\3.16.0-rc3\CMakeRCCompiler.cmake;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\CMakeFiles\3.16.0-rc3\CMakeSystem.cmake;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\copts\AbseilConfigureCopts.cmake;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\copts\GENERATED_AbseilCopts.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/ober3/source/repos/Imgui Template/Imgui Template/abseil/abseil-cpp-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/ober3/source/repos/Imgui Template/Imgui Template/abseil/abseil-cpp-master" "-BC:/Users/ober3/source/repos/Imgui Template/Imgui Template/abseil/abseil-cpp-master/absl" --check-stamp-file "C:/Users/ober3/source/repos/Imgui Template/Imgui Template/abseil/abseil-cpp-master/absl/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CheckIncludeFile.cxx.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.16\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\CMake\AbseilDll.cmake;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\CMake\AbseilHelpers.cmake;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\CMake\AbseilInstallDirs.cmake;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\CMake\Googletest\CMakeLists.txt.in;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\CMake\Googletest\DownloadGTest.cmake;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\CMake\abslConfig.cmake.in;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\CMakeFiles\3.16.0-rc3\CMakeCXXCompiler.cmake;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\CMakeFiles\3.16.0-rc3\CMakeRCCompiler.cmake;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\CMakeFiles\3.16.0-rc3\CMakeSystem.cmake;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\copts\AbseilConfigureCopts.cmake;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\copts\GENERATED_AbseilCopts.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/ober3/source/repos/Imgui Template/Imgui Template/abseil/abseil-cpp-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/ober3/source/repos/Imgui Template/Imgui Template/abseil/abseil-cpp-master" "-BC:/Users/ober3/source/repos/Imgui Template/Imgui Template/abseil/abseil-cpp-master/absl" --check-stamp-file "C:/Users/ober3/source/repos/Imgui Template/Imgui Template/abseil/abseil-cpp-master/absl/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CheckIncludeFile.cxx.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.16\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\CMake\AbseilDll.cmake;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\CMake\AbseilHelpers.cmake;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\CMake\AbseilInstallDirs.cmake;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\CMake\Googletest\CMakeLists.txt.in;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\CMake\Googletest\DownloadGTest.cmake;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\CMake\abslConfig.cmake.in;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\CMakeFiles\3.16.0-rc3\CMakeCXXCompiler.cmake;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\CMakeFiles\3.16.0-rc3\CMakeRCCompiler.cmake;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\CMakeFiles\3.16.0-rc3\CMakeSystem.cmake;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\copts\AbseilConfigureCopts.cmake;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\copts\GENERATED_AbseilCopts.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/ober3/source/repos/Imgui Template/Imgui Template/abseil/abseil-cpp-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/ober3/source/repos/Imgui Template/Imgui Template/abseil/abseil-cpp-master" "-BC:/Users/ober3/source/repos/Imgui Template/Imgui Template/abseil/abseil-cpp-master/absl" --check-stamp-file "C:/Users/ober3/source/repos/Imgui Template/Imgui Template/abseil/abseil-cpp-master/absl/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CheckIncludeFile.cxx.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.16\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\CMake\AbseilDll.cmake;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\CMake\AbseilHelpers.cmake;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\CMake\AbseilInstallDirs.cmake;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\CMake\Googletest\CMakeLists.txt.in;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\CMake\Googletest\DownloadGTest.cmake;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\CMake\abslConfig.cmake.in;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\CMakeFiles\3.16.0-rc3\CMakeCXXCompiler.cmake;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\CMakeFiles\3.16.0-rc3\CMakeRCCompiler.cmake;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\CMakeFiles\3.16.0-rc3\CMakeSystem.cmake;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\copts\AbseilConfigureCopts.cmake;C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\copts\GENERATED_AbseilCopts.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\ZERO_CHECK.vcxproj">
+      <Project>{21EF1548-A01B-3873-B597-127339595D9C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\base\absl_absl_exception_safety_testing_test.vcxproj">
+      <Project>{D566CA9D-9165-311D-9ED8-F13C2E010450}</Project>
+      <Name>absl_absl_exception_safety_testing_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\algorithm\absl_algorithm_test.vcxproj">
+      <Project>{D6566AAA-4B12-3619-8D3B-7F0F9482FF29}</Project>
+      <Name>absl_algorithm_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\types\absl_any_exception_safety_test.vcxproj">
+      <Project>{07DCE374-6749-3119-BACC-1D1C28458AC7}</Project>
+      <Name>absl_any_exception_safety_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\types\absl_any_test.vcxproj">
+      <Project>{2792E96C-FD1C-3AF8-A900-9CA5A0B33D66}</Project>
+      <Name>absl_any_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\types\absl_any_test_noexceptions.vcxproj">
+      <Project>{3811FB7B-AC3B-3B48-8F6D-B39EC6669737}</Project>
+      <Name>absl_any_test_noexceptions</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\strings\absl_ascii_test.vcxproj">
+      <Project>{CCF715AD-B267-3E2C-8570-E242CC2F6B66}</Project>
+      <Name>absl_ascii_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\base\absl_atomic_hook_test.vcxproj">
+      <Project>{BC344B6F-41E3-32F9-B843-4C78676A4A2A}</Project>
+      <Name>absl_atomic_hook_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\synchronization\absl_barrier_test.vcxproj">
+      <Project>{36C0AB8C-AD34-32DA-A85F-685DBE8B47DA}</Project>
+      <Name>absl_barrier_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\functional\absl_bind_front_test.vcxproj">
+      <Project>{1A506971-AC74-36E6-972D-C1F38BD52447}</Project>
+      <Name>absl_bind_front_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\base\absl_bit_cast_test.vcxproj">
+      <Project>{931ECC36-E24C-30AB-A321-4FC857E0C78E}</Project>
+      <Name>absl_bit_cast_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\base\absl_bits_test.vcxproj">
+      <Project>{305E2EE1-55A5-3C33-BA67-70E353F40F53}</Project>
+      <Name>absl_bits_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\synchronization\absl_blocking_counter_test.vcxproj">
+      <Project>{1662A9BE-0DA1-35F6-ACF7-7D696C1C3EE1}</Project>
+      <Name>absl_blocking_counter_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\container\absl_btree_test.vcxproj">
+      <Project>{D678A652-4F01-3343-BA82-C8D6A93FFF0F}</Project>
+      <Name>absl_btree_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\base\absl_call_once_test.vcxproj">
+      <Project>{3D6A85A9-EE88-321E-95A6-2E8A0C5981BE}</Project>
+      <Name>absl_call_once_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\strings\absl_char_map_test.vcxproj">
+      <Project>{5BDDB45F-3819-3CA2-9E94-094B3655B4B1}</Project>
+      <Name>absl_char_map_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\strings\absl_charconv_bigint_test.vcxproj">
+      <Project>{D6779659-A20F-33EE-B28F-762E8CCAE36E}</Project>
+      <Name>absl_charconv_bigint_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\strings\absl_charconv_parse_test.vcxproj">
+      <Project>{3B4D4869-9E12-3ED6-8EE1-DA337B677037}</Project>
+      <Name>absl_charconv_parse_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\strings\absl_charconv_test.vcxproj">
+      <Project>{58B21EF5-6054-33FE-A6A0-A900C15AD6ED}</Project>
+      <Name>absl_charconv_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\hash\absl_city_test.vcxproj">
+      <Project>{CEFCB421-CA7B-3BA9-90B9-79E1A18B452B}</Project>
+      <Name>absl_city_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\base\absl_cmake_thread_test.vcxproj">
+      <Project>{D56F644E-5085-3517-9D53-5828D60D3E78}</Project>
+      <Name>absl_cmake_thread_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\types\absl_compare_test.vcxproj">
+      <Project>{0B4BCA97-C132-3A48-8397-BF05BE89038C}</Project>
+      <Name>absl_compare_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\container\absl_compressed_tuple_test.vcxproj">
+      <Project>{7E1E622B-E277-33A4-A52F-286310AC54FC}</Project>
+      <Name>absl_compressed_tuple_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\base\absl_config_test.vcxproj">
+      <Project>{6535D540-2293-3C94-A87F-CC5BB75F5367}</Project>
+      <Name>absl_config_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\types\absl_conformance_testing_test.vcxproj">
+      <Project>{5BB181AF-DF67-3DE5-83F3-EED14FC7BC06}</Project>
+      <Name>absl_conformance_testing_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\types\absl_conformance_testing_test_no_exceptions.vcxproj">
+      <Project>{B72AFBC2-E200-392B-81E6-D8D102520584}</Project>
+      <Name>absl_conformance_testing_test_no_exceptions</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\container\absl_container_memory_test.vcxproj">
+      <Project>{E005998F-5ECB-3CE3-89E8-2B18BE4BFBFD}</Project>
+      <Name>absl_container_memory_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\algorithm\absl_container_test.vcxproj">
+      <Project>{E24A8BB5-DEB5-3248-8DCC-B94DF4D4B409}</Project>
+      <Name>absl_container_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\strings\absl_cord_test.vcxproj">
+      <Project>{4A930FC2-82E4-309B-95BC-732C5AB3F1ED}</Project>
+      <Name>absl_cord_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\debugging\absl_demangle_test.vcxproj">
+      <Project>{7535C732-6FAF-326C-8569-389517F6EC0D}</Project>
+      <Name>absl_demangle_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\debugging\absl_disabled_leak_check_test.vcxproj">
+      <Project>{7854A4C1-43F8-3DB2-B5A2-3295A599A5C8}</Project>
+      <Name>absl_disabled_leak_check_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\base\absl_endian_test.vcxproj">
+      <Project>{FC7630D2-131A-348A-8340-0611A387E409}</Project>
+      <Name>absl_endian_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\base\absl_errno_saver_test.vcxproj">
+      <Project>{240BCAA6-4729-3F2F-AEA5-F111F00DE494}</Project>
+      <Name>absl_errno_saver_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\strings\absl_escaping_test.vcxproj">
+      <Project>{2177E090-8C5B-39DC-9442-642FABB7AE32}</Project>
+      <Name>absl_escaping_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\base\absl_exponential_biased_test.vcxproj">
+      <Project>{30A25A16-F79E-3FFB-96DA-AA3CE0F41097}</Project>
+      <Name>absl_exponential_biased_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\debugging\absl_failure_signal_handler_test.vcxproj">
+      <Project>{11C9F91D-C3B7-35F1-99C0-3E31F18A3A6A}</Project>
+      <Name>absl_failure_signal_handler_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\base\absl_fast_type_id_test.vcxproj">
+      <Project>{68D93C10-782F-36BB-B4A4-905E6EE53D50}</Project>
+      <Name>absl_fast_type_id_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\container\absl_fixed_array_exception_safety_test.vcxproj">
+      <Project>{FBB4F21E-F16B-3A85-83B3-42AE58DBCA96}</Project>
+      <Name>absl_fixed_array_exception_safety_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\container\absl_fixed_array_test.vcxproj">
+      <Project>{F1EBD589-DF89-38D0-9418-84FFE1DBFC2A}</Project>
+      <Name>absl_fixed_array_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\flags\absl_flags_commandlineflag_test.vcxproj">
+      <Project>{FD866103-AC89-3293-836B-1EEE4D4B8C2B}</Project>
+      <Name>absl_flags_commandlineflag_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\flags\absl_flags_config_test.vcxproj">
+      <Project>{05C42F5A-0B8B-347C-A6C4-34E8ACA4FA4B}</Project>
+      <Name>absl_flags_config_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\flags\absl_flags_flag_test.vcxproj">
+      <Project>{3991BD3E-09D1-3224-9AC2-E3DD4090A695}</Project>
+      <Name>absl_flags_flag_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\flags\absl_flags_marshalling_test.vcxproj">
+      <Project>{16D33A93-73CE-35EE-97ED-E18F9771955E}</Project>
+      <Name>absl_flags_marshalling_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\flags\absl_flags_parse_test.vcxproj">
+      <Project>{6874DEC7-1356-3EB0-B288-080D3AC0EFA2}</Project>
+      <Name>absl_flags_parse_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\flags\absl_flags_path_util_test.vcxproj">
+      <Project>{C05E02C0-9FC3-3BDB-B2B9-B2B71D9F880B}</Project>
+      <Name>absl_flags_path_util_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\flags\absl_flags_program_name_test.vcxproj">
+      <Project>{19C7FFAA-859E-31CC-9CB9-5505F2E4DCF7}</Project>
+      <Name>absl_flags_program_name_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\flags\absl_flags_reflection_test.vcxproj">
+      <Project>{1EB53A84-79C4-3931-A379-6B84CF8D41C3}</Project>
+      <Name>absl_flags_reflection_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\flags\absl_flags_usage_config_test.vcxproj">
+      <Project>{913FDCFF-8ABB-38CF-9ECB-A457529D4E60}</Project>
+      <Name>absl_flags_usage_config_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\flags\absl_flags_usage_test.vcxproj">
+      <Project>{7B63C5F6-9183-36BE-943A-1DBA627029C7}</Project>
+      <Name>absl_flags_usage_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\container\absl_flat_hash_map_test.vcxproj">
+      <Project>{9CD706AA-826F-39F6-AABE-3EC2EB57F200}</Project>
+      <Name>absl_flat_hash_map_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\container\absl_flat_hash_set_test.vcxproj">
+      <Project>{A882344F-51A2-3627-BCBF-B262E7817B69}</Project>
+      <Name>absl_flat_hash_set_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\functional\absl_function_ref_test.vcxproj">
+      <Project>{E430735E-5918-321D-BF62-7B479207C365}</Project>
+      <Name>absl_function_ref_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\synchronization\absl_graphcycles_test.vcxproj">
+      <Project>{400150C7-31F5-30A2-BA1C-43416C99B6CD}</Project>
+      <Name>absl_graphcycles_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\container\absl_hash_function_defaults_test.vcxproj">
+      <Project>{70BB9854-41A8-3D2E-8B28-F0ACD2D801C0}</Project>
+      <Name>absl_hash_function_defaults_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\container\absl_hash_policy_testing_test.vcxproj">
+      <Project>{79F946E5-45FE-3B2D-8C8D-37CB36AFF7AC}</Project>
+      <Name>absl_hash_policy_testing_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\container\absl_hash_policy_traits_test.vcxproj">
+      <Project>{9495C973-952C-3765-89B5-B6BC61D6EEA6}</Project>
+      <Name>absl_hash_policy_traits_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\hash\absl_hash_test.vcxproj">
+      <Project>{0168018E-264B-39CC-BB13-F4A97A6F1326}</Project>
+      <Name>absl_hash_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\container\absl_hashtablez_sampler_test.vcxproj">
+      <Project>{2DC9AF3D-432B-32A4-BDD9-BCD26C9D9214}</Project>
+      <Name>absl_hashtablez_sampler_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\base\absl_inline_variable_test.vcxproj">
+      <Project>{03730AB8-17E1-399B-8185-F69DDC259298}</Project>
+      <Name>absl_inline_variable_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\container\absl_inlined_vector_exception_safety_test.vcxproj">
+      <Project>{B9D78FF6-630D-369B-8800-1C63237DF676}</Project>
+      <Name>absl_inlined_vector_exception_safety_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\container\absl_inlined_vector_test.vcxproj">
+      <Project>{EFB41E9F-D40B-3E16-9E21-3F75895466E6}</Project>
+      <Name>absl_inlined_vector_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\numeric\absl_int128_test.vcxproj">
+      <Project>{A07F74E8-BF49-348E-B168-8A9C643800D8}</Project>
+      <Name>absl_int128_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\base\absl_invoke_test.vcxproj">
+      <Project>{5085FF79-C072-34B1-B9CD-2D4259482474}</Project>
+      <Name>absl_invoke_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\container\absl_layout_test.vcxproj">
+      <Project>{4311E268-DBEC-3095-A4D3-DB907B3D3BFF}</Project>
+      <Name>absl_layout_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\debugging\absl_leak_check_no_lsan_test.vcxproj">
+      <Project>{D99CD308-76E0-3015-A656-A6C34061EEA0}</Project>
+      <Name>absl_leak_check_no_lsan_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\debugging\absl_leak_check_test.vcxproj">
+      <Project>{612D3519-9EAA-3135-BABA-8BA4F1020AEE}</Project>
+      <Name>absl_leak_check_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\synchronization\absl_lifetime_test.vcxproj">
+      <Project>{A3609FA7-756A-392C-A685-97402B9CF81E}</Project>
+      <Name>absl_lifetime_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\base\absl_log_severity_test.vcxproj">
+      <Project>{E48D7A80-253B-338A-B279-EB82A1C702C9}</Project>
+      <Name>absl_log_severity_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\base\absl_low_level_alloc_test.vcxproj">
+      <Project>{2DDF2009-E029-3757-B410-3384CEE357BF}</Project>
+      <Name>absl_low_level_alloc_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\strings\absl_match_test.vcxproj">
+      <Project>{9A49F78D-077E-333A-9675-BD30F7A7A8A4}</Project>
+      <Name>absl_match_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\memory\absl_memory_exception_safety_test.vcxproj">
+      <Project>{15AAFFBA-5F68-3A30-93ED-507BA1D9E29A}</Project>
+      <Name>absl_memory_exception_safety_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\memory\absl_memory_test.vcxproj">
+      <Project>{06A498B9-CF41-317D-A48D-98730B7D38C5}</Project>
+      <Name>absl_memory_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\strings\absl_memutil_test.vcxproj">
+      <Project>{176E81A9-3696-3584-856E-5ABEC0FA5595}</Project>
+      <Name>absl_memutil_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\synchronization\absl_mutex_test.vcxproj">
+      <Project>{B92AA8B3-274E-351A-931C-083D7709D220}</Project>
+      <Name>absl_mutex_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\container\absl_node_hash_map_test.vcxproj">
+      <Project>{F7D2BFBA-D8C3-342D-8024-158AABD4035D}</Project>
+      <Name>absl_node_hash_map_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\container\absl_node_hash_policy_test.vcxproj">
+      <Project>{1B6D465F-972D-3541-BB42-5977EE9024F8}</Project>
+      <Name>absl_node_hash_policy_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\container\absl_node_hash_set_test.vcxproj">
+      <Project>{D91FEF6A-129C-31C8-B07B-0CB2A0369F87}</Project>
+      <Name>absl_node_hash_set_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\synchronization\absl_notification_test.vcxproj">
+      <Project>{51AF4D24-39FE-3F5E-9E97-A56241F9B1CE}</Project>
+      <Name>absl_notification_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\strings\absl_numbers_test.vcxproj">
+      <Project>{A5CC85DA-D994-37F9-A993-A50FD64E4110}</Project>
+      <Name>absl_numbers_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\base\absl_optimization_test.vcxproj">
+      <Project>{ACF62D35-B05E-3996-85B0-FBF095FA21FC}</Project>
+      <Name>absl_optimization_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\types\absl_optional_exception_safety_test.vcxproj">
+      <Project>{9F584854-51A2-3B43-B77B-83002EA3AF6A}</Project>
+      <Name>absl_optional_exception_safety_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\types\absl_optional_test.vcxproj">
+      <Project>{D896FE08-2535-3E5F-BCDB-A0C3D54C6768}</Project>
+      <Name>absl_optional_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\strings\absl_ostringstream_test.vcxproj">
+      <Project>{F97EF55A-DE30-3B67-9014-2AD1AE91A951}</Project>
+      <Name>absl_ostringstream_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\synchronization\absl_per_thread_sem_test.vcxproj">
+      <Project>{69379661-13B6-3742-8DBA-0D5E4A8AD88A}</Project>
+      <Name>absl_per_thread_sem_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\base\absl_periodic_sampler_test.vcxproj">
+      <Project>{FB2DB9AB-A857-352D-8A2B-5600C4B7A737}</Project>
+      <Name>absl_periodic_sampler_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\strings\absl_pow10_helper_test.vcxproj">
+      <Project>{1318C697-1856-35CA-8363-A150A9201657}</Project>
+      <Name>absl_pow10_helper_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\absl_random_bernoulli_distribution_test.vcxproj">
+      <Project>{E2100477-BE09-39A5-B035-E3E5B413CBC1}</Project>
+      <Name>absl_random_bernoulli_distribution_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\absl_random_beta_distribution_test.vcxproj">
+      <Project>{5BDEEFE7-D7DB-30AD-A6DC-43D725D00972}</Project>
+      <Name>absl_random_beta_distribution_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\absl_random_bit_gen_ref_test.vcxproj">
+      <Project>{DAE68874-97CB-3D92-8603-0DE1F5A0E867}</Project>
+      <Name>absl_random_bit_gen_ref_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\absl_random_discrete_distribution_test.vcxproj">
+      <Project>{BD5468FE-B996-3D17-9D4D-44C73B7ADA70}</Project>
+      <Name>absl_random_discrete_distribution_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\absl_random_distributions_test.vcxproj">
+      <Project>{43F88D8C-3B85-3C2C-8724-FDDF9B2BA3DF}</Project>
+      <Name>absl_random_distributions_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\absl_random_examples_test.vcxproj">
+      <Project>{2EF6B414-D615-3B59-A81E-CA8F02AD654F}</Project>
+      <Name>absl_random_examples_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\absl_random_exponential_distribution_test.vcxproj">
+      <Project>{8B9E27F9-4702-31AA-BACA-5E6B10116F17}</Project>
+      <Name>absl_random_exponential_distribution_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\absl_random_gaussian_distribution_test.vcxproj">
+      <Project>{EA12AA31-6931-31BB-80B3-B18E68923AA7}</Project>
+      <Name>absl_random_gaussian_distribution_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\absl_random_generators_test.vcxproj">
+      <Project>{A797E78F-A446-3429-81E1-A463B5E1531A}</Project>
+      <Name>absl_random_generators_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\absl_random_internal_chi_square_test.vcxproj">
+      <Project>{4EEC1354-7B97-3356-A9CC-5D5F26F18A5F}</Project>
+      <Name>absl_random_internal_chi_square_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\absl_random_internal_distribution_test_util_test.vcxproj">
+      <Project>{B81E7B15-965F-3E61-91F8-216D61265765}</Project>
+      <Name>absl_random_internal_distribution_test_util_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\absl_random_internal_explicit_seed_seq_test.vcxproj">
+      <Project>{D3133285-E397-39AE-A133-8CA906CCAF7C}</Project>
+      <Name>absl_random_internal_explicit_seed_seq_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\absl_random_internal_fast_uniform_bits_test.vcxproj">
+      <Project>{F21560D3-410C-3A66-9CB7-72C8DA303500}</Project>
+      <Name>absl_random_internal_fast_uniform_bits_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\absl_random_internal_fastmath_test.vcxproj">
+      <Project>{1429DF3C-892B-3C9B-BFE7-1AB85151D4EE}</Project>
+      <Name>absl_random_internal_fastmath_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\absl_random_internal_generate_real_test.vcxproj">
+      <Project>{CEEDFD07-F548-3EDA-8B1E-484B8C6BACD2}</Project>
+      <Name>absl_random_internal_generate_real_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\absl_random_internal_iostream_state_saver_test.vcxproj">
+      <Project>{831EDEC5-43BD-353F-9451-F759A156199E}</Project>
+      <Name>absl_random_internal_iostream_state_saver_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\absl_random_internal_nonsecure_base_test.vcxproj">
+      <Project>{8FA5E6AB-9F02-3A14-BD68-F7FFB059D14F}</Project>
+      <Name>absl_random_internal_nonsecure_base_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\absl_random_internal_pcg_engine_test.vcxproj">
+      <Project>{235DE6DE-6B1A-3658-A540-5E447044AB75}</Project>
+      <Name>absl_random_internal_pcg_engine_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\absl_random_internal_pool_urbg_test.vcxproj">
+      <Project>{36F81B0E-A87A-3FE0-9340-9F19C224134B}</Project>
+      <Name>absl_random_internal_pool_urbg_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\absl_random_internal_randen_engine_test.vcxproj">
+      <Project>{0527F894-BBCC-3150-8385-22B826CB0C3B}</Project>
+      <Name>absl_random_internal_randen_engine_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\absl_random_internal_randen_hwaes_test.vcxproj">
+      <Project>{1B38C03A-014F-30CF-A274-3FD5CEC2D5CA}</Project>
+      <Name>absl_random_internal_randen_hwaes_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\absl_random_internal_randen_slow_test.vcxproj">
+      <Project>{B2060DF9-ADB7-3D38-AF5A-A330E251132F}</Project>
+      <Name>absl_random_internal_randen_slow_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\absl_random_internal_randen_test.vcxproj">
+      <Project>{AF520EA2-1274-3E43-8E45-80B7CA10A957}</Project>
+      <Name>absl_random_internal_randen_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\absl_random_internal_salted_seed_seq_test.vcxproj">
+      <Project>{86CBE9E7-0F6C-3197-891C-2E918AC978F7}</Project>
+      <Name>absl_random_internal_salted_seed_seq_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\absl_random_internal_seed_material_test.vcxproj">
+      <Project>{31B4E14C-2518-3A7D-85A1-5E5206D83651}</Project>
+      <Name>absl_random_internal_seed_material_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\absl_random_internal_traits_test.vcxproj">
+      <Project>{54E6BAED-1627-39F0-8D1D-6C8E9C5C50F3}</Project>
+      <Name>absl_random_internal_traits_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\absl_random_internal_wide_multiply_test.vcxproj">
+      <Project>{DF997A57-FF36-3793-AB1E-3FCC34B6F897}</Project>
+      <Name>absl_random_internal_wide_multiply_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\absl_random_log_uniform_int_distribution_test.vcxproj">
+      <Project>{6FD78142-1165-3783-A5DA-89A7C78C431C}</Project>
+      <Name>absl_random_log_uniform_int_distribution_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\absl_random_mock_distributions_test.vcxproj">
+      <Project>{60D0D52A-0CD4-3807-9C02-A8019246BB84}</Project>
+      <Name>absl_random_mock_distributions_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\absl_random_mocking_bit_gen_test.vcxproj">
+      <Project>{C3BD091F-BBE5-3CB6-B3DF-70E80303D623}</Project>
+      <Name>absl_random_mocking_bit_gen_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\absl_random_poisson_distribution_test.vcxproj">
+      <Project>{B530CEE4-14BE-3298-8457-8966B158B520}</Project>
+      <Name>absl_random_poisson_distribution_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\absl_random_seed_sequences_test.vcxproj">
+      <Project>{FBE0CFB4-0D3F-3491-AE5D-8364ED52DB87}</Project>
+      <Name>absl_random_seed_sequences_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\absl_random_uniform_int_distribution_test.vcxproj">
+      <Project>{263B66BD-90BB-3F4C-9162-EF8784696BF6}</Project>
+      <Name>absl_random_uniform_int_distribution_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\absl_random_uniform_real_distribution_test.vcxproj">
+      <Project>{3E86BB89-4FD0-3612-AB10-E4F49AC0EB05}</Project>
+      <Name>absl_random_uniform_real_distribution_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\absl_random_zipf_distribution_test.vcxproj">
+      <Project>{ADD3529B-9235-35F7-9BA0-27B90F7F2E54}</Project>
+      <Name>absl_random_zipf_distribution_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\container\absl_raw_hash_set_allocator_test.vcxproj">
+      <Project>{81EF52C0-E6EA-3426-9C88-56E5F42E9AA5}</Project>
+      <Name>absl_raw_hash_set_allocator_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\container\absl_raw_hash_set_test.vcxproj">
+      <Project>{27065EDC-A437-3AC6-B139-FB9D01812CA0}</Project>
+      <Name>absl_raw_hash_set_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\base\absl_raw_logging_test.vcxproj">
+      <Project>{2CA7AEFD-3BB5-3D64-A149-8879CDE9C593}</Project>
+      <Name>absl_raw_logging_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\strings\absl_resize_uninitialized_test.vcxproj">
+      <Project>{DDCA05A9-30F7-34F3-B0DE-A67CC5264B9A}</Project>
+      <Name>absl_resize_uninitialized_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\base\absl_scoped_set_env_test.vcxproj">
+      <Project>{49554AD5-155A-3829-BAC9-D5796BD86B40}</Project>
+      <Name>absl_scoped_set_env_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\types\absl_span_test.vcxproj">
+      <Project>{DFCDCD88-7120-3D11-BF57-A846F7CCBA66}</Project>
+      <Name>absl_span_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\types\absl_span_test_noexceptions.vcxproj">
+      <Project>{4AEFAD84-B55F-3D51-97B4-EBF4C971BD89}</Project>
+      <Name>absl_span_test_noexceptions</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\base\absl_spinlock_test.vcxproj">
+      <Project>{E09E2727-CDC0-39FD-824A-E30BC06F02D4}</Project>
+      <Name>absl_spinlock_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\debugging\absl_stack_consumption_test.vcxproj">
+      <Project>{A965EDFB-EF16-30F0-BA8E-8F4BC731C492}</Project>
+      <Name>absl_stack_consumption_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\status\absl_status_test.vcxproj">
+      <Project>{EEB9BE3A-52F1-3295-8488-15FB6C081945}</Project>
+      <Name>absl_status_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\strings\absl_str_cat_test.vcxproj">
+      <Project>{B36A9731-A146-307C-A9C2-CD6EF5799A6D}</Project>
+      <Name>absl_str_cat_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\strings\absl_str_format_arg_test.vcxproj">
+      <Project>{08E194B0-90E6-317E-B24B-3CD14749E6B1}</Project>
+      <Name>absl_str_format_arg_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\strings\absl_str_format_bind_test.vcxproj">
+      <Project>{014173CE-1916-3B4C-A9D7-B9E0BE462193}</Project>
+      <Name>absl_str_format_bind_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\strings\absl_str_format_checker_test.vcxproj">
+      <Project>{435A6A22-6EAA-3894-ABF5-B5C1C3F0D89E}</Project>
+      <Name>absl_str_format_checker_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\strings\absl_str_format_convert_test.vcxproj">
+      <Project>{7F79DC8A-7A5E-3BDC-AC65-3A59B3C0BDB1}</Project>
+      <Name>absl_str_format_convert_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\strings\absl_str_format_extension_test.vcxproj">
+      <Project>{8F2074F2-B442-330C-8E16-2EF214F46A94}</Project>
+      <Name>absl_str_format_extension_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\strings\absl_str_format_output_test.vcxproj">
+      <Project>{B1A82C31-50EA-367D-9F0C-DB33CE874CFD}</Project>
+      <Name>absl_str_format_output_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\strings\absl_str_format_parser_test.vcxproj">
+      <Project>{E05A5075-E80A-3D7D-A73B-FAD4599E22A0}</Project>
+      <Name>absl_str_format_parser_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\strings\absl_str_format_test.vcxproj">
+      <Project>{52176A65-65DC-30D6-B157-103660C04047}</Project>
+      <Name>absl_str_format_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\strings\absl_str_join_test.vcxproj">
+      <Project>{CBF8A724-04E6-3D09-8CF7-81F347152AC8}</Project>
+      <Name>absl_str_join_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\strings\absl_str_replace_test.vcxproj">
+      <Project>{532DADA1-81C8-33CD-8262-1E656E476AFF}</Project>
+      <Name>absl_str_replace_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\strings\absl_str_split_test.vcxproj">
+      <Project>{1B3B8FFA-24D9-316B-95A8-DFA8540D2C31}</Project>
+      <Name>absl_str_split_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\base\absl_strerror_test.vcxproj">
+      <Project>{2BE3E907-0A7C-31DB-8B42-B7CE18D884E3}</Project>
+      <Name>absl_strerror_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\strings\absl_string_view_test.vcxproj">
+      <Project>{97E6945E-9C8E-3792-B1A3-A7C5D3791938}</Project>
+      <Name>absl_string_view_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\strings\absl_strip_test.vcxproj">
+      <Project>{5292874E-3B9D-3AC3-BD70-5813A3ED8211}</Project>
+      <Name>absl_strip_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\strings\absl_substitute_test.vcxproj">
+      <Project>{AAACB24F-B7D6-3706-8C20-4C787DF81221}</Project>
+      <Name>absl_substitute_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\debugging\absl_symbolize_test.vcxproj">
+      <Project>{9F1370F1-7573-3FCA-B207-CCEB9C1B7952}</Project>
+      <Name>absl_symbolize_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\base\absl_sysinfo_test.vcxproj">
+      <Project>{575CC2BA-83B2-367C-AC0F-BB1D847D16E5}</Project>
+      <Name>absl_sysinfo_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\container\absl_test_instance_tracker_test.vcxproj">
+      <Project>{9198470F-EF22-357B-8A36-624B4F86D23A}</Project>
+      <Name>absl_test_instance_tracker_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\base\absl_thread_identity_test.vcxproj">
+      <Project>{3A86A2BC-5F24-3876-97B1-7D4EEF5B8330}</Project>
+      <Name>absl_thread_identity_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\base\absl_throw_delegate_test.vcxproj">
+      <Project>{D8241E9A-5DF9-3F67-8970-DEE8F7EF5DAD}</Project>
+      <Name>absl_throw_delegate_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\time\absl_time_test.vcxproj">
+      <Project>{4302241D-44EB-3BDA-BD6C-226E469D60D6}</Project>
+      <Name>absl_time_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\meta\absl_type_traits_test.vcxproj">
+      <Project>{C32A8BF8-5519-3D3C-8486-769C281432A8}</Project>
+      <Name>absl_type_traits_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\container\absl_unordered_map_test.vcxproj">
+      <Project>{EC4C4678-73A9-33AA-9527-557928B87253}</Project>
+      <Name>absl_unordered_map_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\container\absl_unordered_set_test.vcxproj">
+      <Project>{FD52AD4A-F5B1-3323-AA7A-C9EF85BE4D1D}</Project>
+      <Name>absl_unordered_set_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\strings\absl_utf8_test.vcxproj">
+      <Project>{34AF32CE-B58D-381F-99D0-8ACF9A94D222}</Project>
+      <Name>absl_utf8_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\utility\absl_utility_test.vcxproj">
+      <Project>{6EE7026F-F466-3F53-9688-690FCF33A512}</Project>
+      <Name>absl_utility_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\types\absl_variant_exception_safety_test.vcxproj">
+      <Project>{75BBBD46-23F1-39D6-A60F-4FD89EF70E6C}</Project>
+      <Name>absl_variant_exception_safety_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\types\absl_variant_test.vcxproj">
+      <Project>{912468F3-EEB9-34AB-A8C3-37AD08CA297C}</Project>
+      <Name>absl_variant_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\base\atomic_hook_test_helper.vcxproj">
+      <Project>{52BB76C4-6E57-383C-9D9F-8FD18EF2A607}</Project>
+      <Name>atomic_hook_test_helper</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\types\bad_any_cast_impl.vcxproj">
+      <Project>{3CF694FD-EA9E-37D6-B135-228198D96A19}</Project>
+      <Name>bad_any_cast_impl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\types\bad_optional_access.vcxproj">
+      <Project>{E4A37433-D4ED-3BF1-A4EE-C257F167EB05}</Project>
+      <Name>bad_optional_access</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\types\bad_variant_access.vcxproj">
+      <Project>{1B34E911-96A4-3F3D-8068-00A0E0D3842A}</Project>
+      <Name>bad_variant_access</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\base\base.vcxproj">
+      <Project>{54694437-D849-3BFC-8A56-7675DADADA2D}</Project>
+      <Name>base</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\hash\city.vcxproj">
+      <Project>{344D3F20-2AB4-3E70-82C5-DDC439B2FCB9}</Project>
+      <Name>city</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\time\civil_time.vcxproj">
+      <Project>{CF440293-B06B-310D-97AE-5B8BD0505A61}</Project>
+      <Name>civil_time</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\strings\cord.vcxproj">
+      <Project>{B3FF7012-07CC-3D69-B339-5DA653034849}</Project>
+      <Name>cord</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\debugging\debugging_internal.vcxproj">
+      <Project>{4BE4E8F3-1648-33FC-96EF-F162D060C69C}</Project>
+      <Name>debugging_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\debugging\demangle_internal.vcxproj">
+      <Project>{86374523-0B5A-3AD8-8B83-232E36FBD20F}</Project>
+      <Name>demangle_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\base\dynamic_annotations.vcxproj">
+      <Project>{8536EED1-6FE4-351D-BC7B-FCEA9DD27C9C}</Project>
+      <Name>dynamic_annotations</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\debugging\examine_stack.vcxproj">
+      <Project>{FD5F73CA-23CB-303C-8E19-6083C55CD8C0}</Project>
+      <Name>examine_stack</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\base\exception_safety_testing.vcxproj">
+      <Project>{60B440C8-C59D-3E01-A2ED-30F752D8ACE1}</Project>
+      <Name>exception_safety_testing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\base\exponential_biased.vcxproj">
+      <Project>{E2CEF4D6-97F8-31B2-A02E-F0B049889850}</Project>
+      <Name>exponential_biased</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\debugging\failure_signal_handler.vcxproj">
+      <Project>{90B2F9E5-BAA8-3253-AD44-339FA9768F1A}</Project>
+      <Name>failure_signal_handler</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\flags\flags.vcxproj">
+      <Project>{9064EB87-58CC-314C-B485-47E08309DF18}</Project>
+      <Name>flags</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\flags\flags_commandlineflag.vcxproj">
+      <Project>{28B361D1-67A0-35DE-AFE1-242EAE69E4E8}</Project>
+      <Name>flags_commandlineflag</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\flags\flags_commandlineflag_internal.vcxproj">
+      <Project>{E25E8FA8-2A74-302A-BAB0-18C90F05375C}</Project>
+      <Name>flags_commandlineflag_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\flags\flags_config.vcxproj">
+      <Project>{746B4E4A-451A-30DE-9896-A80E9718B2EE}</Project>
+      <Name>flags_config</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\flags\flags_internal.vcxproj">
+      <Project>{9C885C96-8663-3C35-86A8-1B20653112C8}</Project>
+      <Name>flags_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\flags\flags_marshalling.vcxproj">
+      <Project>{EFCCA9BC-1A62-3587-B826-F9FF6279D90F}</Project>
+      <Name>flags_marshalling</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\flags\flags_parse.vcxproj">
+      <Project>{7E7E123C-4630-3A8F-B5CA-F39DBA30183F}</Project>
+      <Name>flags_parse</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\flags\flags_private_handle_accessor.vcxproj">
+      <Project>{1FD786B0-7BB2-3E28-92A1-97ECD54714EB}</Project>
+      <Name>flags_private_handle_accessor</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\flags\flags_program_name.vcxproj">
+      <Project>{D40B3CDD-6DEC-383C-ACAF-F3F7E5F12DD9}</Project>
+      <Name>flags_program_name</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\flags\flags_reflection.vcxproj">
+      <Project>{7E016B96-BB3A-33E5-AA67-ED588523A015}</Project>
+      <Name>flags_reflection</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\flags\flags_usage.vcxproj">
+      <Project>{F8B34F97-70E1-3241-A0E5-8D2CE606A4E5}</Project>
+      <Name>flags_usage</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\flags\flags_usage_internal.vcxproj">
+      <Project>{E5395B21-89BC-3824-9D83-767907A4C26B}</Project>
+      <Name>flags_usage_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\synchronization\graphcycles_internal.vcxproj">
+      <Project>{328D1870-28C2-377A-9F55-0E07FDFDD520}</Project>
+      <Name>graphcycles_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\hash\hash.vcxproj">
+      <Project>{3D68FBD8-CF05-33B8-A97D-AC8647FD42F5}</Project>
+      <Name>hash</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\container\hash_generator_testing.vcxproj">
+      <Project>{962F9DB1-7CE8-3861-A474-0F90372071CA}</Project>
+      <Name>hash_generator_testing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\container\hashtablez_sampler.vcxproj">
+      <Project>{1FDC0EE0-4C74-3FEA-B4CB-C3D9A3B01B4D}</Project>
+      <Name>hashtablez_sampler</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\numeric\int128.vcxproj">
+      <Project>{68F70700-EFED-3B8F-BFF5-FE8D574DD615}</Project>
+      <Name>int128</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\debugging\leak_check.vcxproj">
+      <Project>{28AFF237-A933-384D-9021-FAD7EA2AB8F7}</Project>
+      <Name>leak_check</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\debugging\leak_check_api_disabled_for_testing.vcxproj">
+      <Project>{9667721B-9D94-3501-8C14-07F04DE89217}</Project>
+      <Name>leak_check_api_disabled_for_testing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\debugging\leak_check_api_enabled_for_testing.vcxproj">
+      <Project>{6E44BAB9-0108-3AFE-8148-E9E3B05AA197}</Project>
+      <Name>leak_check_api_enabled_for_testing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\debugging\leak_check_disable.vcxproj">
+      <Project>{83B99E84-32C5-31FD-A855-875A4030F3D5}</Project>
+      <Name>leak_check_disable</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\base\log_severity.vcxproj">
+      <Project>{B6864777-FB5F-3CE0-A6B0-139E5593D686}</Project>
+      <Name>log_severity</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\base\malloc_internal.vcxproj">
+      <Project>{466F07EC-5953-3AAD-9399-46C489C095E5}</Project>
+      <Name>malloc_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\synchronization\per_thread_sem_test_common.vcxproj">
+      <Project>{730549FC-DD3A-39F4-9C78-CA791A79028A}</Project>
+      <Name>per_thread_sem_test_common</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\base\periodic_sampler.vcxproj">
+      <Project>{E9D2B909-F3A2-3F45-8FB1-4B0B8D067B64}</Project>
+      <Name>periodic_sampler</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\strings\pow10_helper.vcxproj">
+      <Project>{4FA36E2F-6FE5-382B-822E-53965A1EE485}</Project>
+      <Name>pow10_helper</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\random_distributions.vcxproj">
+      <Project>{C1EFCC3D-C40D-3779-82B4-C5B1D7283D7D}</Project>
+      <Name>random_distributions</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\random_internal_distribution_test_util.vcxproj">
+      <Project>{844316A3-C23E-3F5B-A2B3-01708A07DC11}</Project>
+      <Name>random_internal_distribution_test_util</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\random_internal_platform.vcxproj">
+      <Project>{BAEFF95A-211C-3027-81A0-E702D1B79D74}</Project>
+      <Name>random_internal_platform</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\random_internal_pool_urbg.vcxproj">
+      <Project>{19D97BAA-106D-3E18-9E9F-FF23BBCF3768}</Project>
+      <Name>random_internal_pool_urbg</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\random_internal_randen.vcxproj">
+      <Project>{B073B40A-EB18-37D3-8813-99E78447D213}</Project>
+      <Name>random_internal_randen</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\random_internal_randen_hwaes.vcxproj">
+      <Project>{9224A890-D8F1-3897-ABE7-F8E793432AA0}</Project>
+      <Name>random_internal_randen_hwaes</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\random_internal_randen_hwaes_impl.vcxproj">
+      <Project>{C212F418-0A02-3356-A479-02B1219827D2}</Project>
+      <Name>random_internal_randen_hwaes_impl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\random_internal_randen_slow.vcxproj">
+      <Project>{D35CA066-2889-31D3-93B1-F4681D44321B}</Project>
+      <Name>random_internal_randen_slow</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\random_internal_seed_material.vcxproj">
+      <Project>{F4ABD23C-3826-30F0-9B32-025FED6DC700}</Project>
+      <Name>random_internal_seed_material</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\random_seed_gen_exception.vcxproj">
+      <Project>{10280062-AE41-3399-AE18-00899B1F3A2F}</Project>
+      <Name>random_seed_gen_exception</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\random\random_seed_sequences.vcxproj">
+      <Project>{78C02401-B265-392D-9DB6-5B0838F0010D}</Project>
+      <Name>random_seed_sequences</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\container\raw_hash_set.vcxproj">
+      <Project>{F6F5F134-0491-31FB-96BC-E54758AA2EB5}</Project>
+      <Name>raw_hash_set</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\base\raw_logging_internal.vcxproj">
+      <Project>{5ECE57E6-15C0-31B0-AED4-979B934D548A}</Project>
+      <Name>raw_logging_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\base\scoped_set_env.vcxproj">
+      <Project>{32E76175-CC9D-387B-89D2-6E3733703CAD}</Project>
+      <Name>scoped_set_env</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\base\spinlock_test_common.vcxproj">
+      <Project>{D134576F-26B0-3D86-87BB-5A57507228A1}</Project>
+      <Name>spinlock_test_common</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\base\spinlock_wait.vcxproj">
+      <Project>{D6F6CEF1-3E37-34E3-9126-DA45C71BC759}</Project>
+      <Name>spinlock_wait</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\debugging\stack_consumption.vcxproj">
+      <Project>{5A4F0A5D-37AC-3D93-8515-A60A01230D64}</Project>
+      <Name>stack_consumption</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\debugging\stacktrace.vcxproj">
+      <Project>{AB322E5C-6A83-31F8-840B-35B9B05DA0C4}</Project>
+      <Name>stacktrace</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\status\status.vcxproj">
+      <Project>{8FEFAA44-762E-31AA-B2D6-3725B2E41DE3}</Project>
+      <Name>status</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\strings\str_format_internal.vcxproj">
+      <Project>{6DDB7566-3A2B-32C5-90B6-C95223CD8D05}</Project>
+      <Name>str_format_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\base\strerror.vcxproj">
+      <Project>{09098D79-ED58-377A-9666-3BA35878F425}</Project>
+      <Name>strerror</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\strings\strings.vcxproj">
+      <Project>{84559739-1F93-3AC4-99E6-2C25567F1374}</Project>
+      <Name>strings</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\strings\strings_internal.vcxproj">
+      <Project>{546BEB2F-F967-3006-977F-826A9CD2D3FA}</Project>
+      <Name>strings_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\debugging\symbolize.vcxproj">
+      <Project>{1FBA8756-AB60-38E5-A877-5862014748CB}</Project>
+      <Name>symbolize</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\synchronization\synchronization.vcxproj">
+      <Project>{E01C3AD9-F93F-3A40-8987-22D92EFE4801}</Project>
+      <Name>synchronization</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\container\test_instance_tracker.vcxproj">
+      <Project>{E515EB9A-CADC-30E7-A86A-88E330C034A7}</Project>
+      <Name>test_instance_tracker</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\base\throw_delegate.vcxproj">
+      <Project>{2FADE737-693D-3013-BCFD-DC91355678C6}</Project>
+      <Name>throw_delegate</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\time\time.vcxproj">
+      <Project>{F382EE6A-73FC-3B7F-AD85-8C270F65EA94}</Project>
+      <Name>time</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\time\time_internal_test_util.vcxproj">
+      <Project>{320C8545-3545-3480-B7E8-6E1D423AF29A}</Project>
+      <Name>time_internal_test_util</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\absl\time\time_zone.vcxproj">
+      <Project>{616E0188-3772-35F0-89D2-F855A7B90868}</Project>
+      <Name>time_zone</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Abseil">
+      <UniqueIdentifier>{bb3585e3-1b06-4a5b-b0ad-8dc855ae09fa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\str_format\arg.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\ascii.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\str_format\bind.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\charconv.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\charconv_bigint.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\charconv_parse.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\hash\internal\city.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\civil_time.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\internal\cctz\src\civil_time_detail.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\clock.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\cord.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\synchronization\internal\create_thread_identity.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\cycleclock.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\duration.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\escaping.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\escaping_conversions.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\exponential_biased.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\str_format\extension.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\format.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\synchronization\internal\graphcycles.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\hash\internal\hash.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\container\internal\hashtablez_sampler.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\numeric\int128.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\low_level_alloc.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\match.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\memutil.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\synchronization\mutex.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\numbers.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\ostringstream.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\str_format\parser.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\synchronization\internal\per_thread_sem.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\periodic_sampler.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\pow10_helper.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\raw_logging.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\scoped_set_env.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\spinlock.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\spinlock_wait.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\debugging\stacktrace.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\str_cat.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\str_replace.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\str_split.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\strerror.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\string_view.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\substitute.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\sysinfo.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\thread_identity.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\throw_delegate.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\time.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\internal\cctz\src\time_zone_fixed.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\internal\cctz\src\time_zone_format.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\internal\cctz\src\time_zone_if.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\internal\cctz\src\time_zone_impl.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\internal\cctz\src\time_zone_info.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\internal\cctz\src\time_zone_libc.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\internal\cctz\src\time_zone_lookup.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\internal\cctz\src\time_zone_posix.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\unscaledcycleclock.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\utf8.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\synchronization\internal\waiter.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\internal\cctz\src\zone_info_source.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\str_format\float_conversion.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\str_format\output.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\container\internal\hashtablez_sampler_force_weak_definition.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\status\status.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\status\status_payload_printer.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\debugging\symbolize.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\container\internal\test_instance_tracker.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\container\internal\raw_hash_set.cc">
+      <Filter>Source Files\Abseil</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

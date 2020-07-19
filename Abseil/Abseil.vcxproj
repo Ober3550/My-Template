@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{99D31FFE-EE36-41DE-A17D-500E368870F5}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Abseil</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NOMINMAX;WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)/Imgui Template/abseil/abseil-cpp-master;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NOMINMAX;WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)/Imgui Template/abseil/abseil-cpp-master;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NOMINMAX;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)/Imgui Template/abseil/abseil-cpp-master;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NOMINMAX;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)/Imgui Template/abseil/abseil-cpp-master;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\cycleclock.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\exponential_biased.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\low_level_alloc.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\periodic_sampler.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\raw_logging.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\scoped_set_env.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\spinlock.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\spinlock_wait.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\strerror.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\sysinfo.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\thread_identity.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\throw_delegate.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\unscaledcycleclock.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\container\internal\hashtablez_sampler.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\container\internal\hashtablez_sampler_force_weak_definition.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\container\internal\raw_hash_set.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\container\internal\test_instance_tracker.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\debugging\stacktrace.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\debugging\symbolize.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\hash\internal\city.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\hash\internal\hash.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\numeric\int128.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\status\status.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\status\status_payload_printer.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\ascii.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\charconv.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\cord.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\escaping.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\charconv_bigint.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\charconv_parse.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\escaping_conversions.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\memutil.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\ostringstream.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\pow10_helper.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\str_format\arg.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\str_format\bind.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\str_format\extension.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\str_format\float_conversion.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\str_format\output.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\str_format\parser.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\utf8.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\match.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\numbers.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\string_view.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\str_cat.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\str_replace.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\str_split.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\substitute.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\synchronization\internal\create_thread_identity.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\synchronization\internal\graphcycles.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\synchronization\internal\per_thread_sem.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\synchronization\internal\waiter.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\synchronization\mutex.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\civil_time.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\clock.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\duration.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\format.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\internal\cctz\src\civil_time_detail.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\internal\cctz\src\time_zone_fixed.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\internal\cctz\src\time_zone_format.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\internal\cctz\src\time_zone_if.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\internal\cctz\src\time_zone_impl.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\internal\cctz\src\time_zone_info.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\internal\cctz\src\time_zone_libc.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\internal\cctz\src\time_zone_lookup.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\internal\cctz\src\time_zone_posix.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\internal\cctz\src\zone_info_source.cc" />
+    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\time.cc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

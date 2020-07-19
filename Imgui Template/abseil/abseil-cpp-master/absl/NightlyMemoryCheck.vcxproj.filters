@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\CMakeFiles\747f8025ac3b05342dd0760c0b848b3d\NightlyMemoryCheck.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\ober3\source\repos\Imgui Template\Imgui Template\abseil\abseil-cpp-master\absl\CMakeFiles\NightlyMemoryCheck" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{57D3D8E6-BDC7-3EBE-A6BD-C8918F5A00C3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
