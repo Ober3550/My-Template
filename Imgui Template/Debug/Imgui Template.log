@@ -1,8 +1,2 @@
-﻿  imgui.cpp
-  imgui_demo.cpp
-  imgui_draw.cpp
-  imgui_widgets.cpp
-  main.cpp
-  imgui-SFML.cpp
-  Generating Code...
+﻿  Pos.cpp
   Imgui Template.vcxproj -> C:\Users\ober3\source\repos\Imgui Template\Debug\Imgui Template.exe

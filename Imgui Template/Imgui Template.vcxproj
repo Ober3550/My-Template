@@ -90,13 +90,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NOMINMAX;SFML_STATIC;SFML_STATIC;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)/Imgui Template/zlib/zlib-1.2.11;$(SolutionDir)/Imgui Template/abseil/abseil-cpp-master;$(SolutionDir)/Imgui Template/SFML-2.5.1/include;$(SolutionDir)Imgui Template/Imgui/imgui-master;$(SolutionDir)Imgui Template/Imgui/imgui-sfml-master;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)/$(SolutionName)/zlib/zlib-1.2.11;$(SolutionDir)/$(SolutionName)/abseil/abseil-cpp-master;$(SolutionDir)/$(SolutionName)/SFML-2.5.1/include;$(SolutionDir)/$(SolutionName)/Imgui/imgui-master;$(SolutionDir)/$(SolutionName)/Imgui/imgui-sfml-master;$(SolutionDir)/$(SolutionName);</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>Abseil.lib;sfml-main-d.lib;sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-system-s-d.lib;opengl32.lib;winmm.lib;gdi32.lib;kernel32.lib;user32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)\Imgui Template\SFML-2.5.1\lib;$(OutDir)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)\$(SolutionName)\SFML-2.5.1\lib;$(OutDir)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -107,13 +107,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NOMINMAX;SFML_STATIC;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)/Imgui Template/zlib/zlib-1.2.11;$(SolutionDir)/Imgui Template/abseil/abseil-cpp-master;$(SolutionDir)/Imgui Template/SFML-2.5.1/include;$(SolutionDir)Imgui Template/Imgui/imgui-master;$(SolutionDir)Imgui Template/Imgui/imgui-sfml-master;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)/$(SolutionName)/zlib/zlib-1.2.11;$(SolutionDir)/$(SolutionName)/abseil/abseil-cpp-master;$(SolutionDir)/$(SolutionName)/SFML-2.5.1/include;$(SolutionDir)/$(SolutionName)/Imgui/imgui-master;$(SolutionDir)/$(SolutionName)/Imgui/imgui-sfml-master;$(SolutionDir)/$(SolutionName);</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>Abseil.lib;sfml-main-d.lib;sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-system-s-d.lib;opengl32.lib;winmm.lib;gdi32.lib;kernel32.lib;user32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)\Imgui Template\SFML-2.5.1\lib;$(OutDir)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)\$(SolutionName)\SFML-2.5.1\lib;$(OutDir)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -126,7 +126,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NOMINMAX;SFML_STATIC;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)/Imgui Template/zlib/zlib-1.2.11;$(SolutionDir)/Imgui Template/abseil/abseil-cpp-master;$(SolutionDir)/Imgui Template/SFML-2.5.1/include;$(SolutionDir)Imgui Template/Imgui/imgui-master;$(SolutionDir)Imgui Template/Imgui/imgui-sfml-master;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)/$(SolutionName)/zlib/zlib-1.2.11;$(SolutionDir)/$(SolutionName)/abseil/abseil-cpp-master;$(SolutionDir)/$(SolutionName)/SFML-2.5.1/include;$(SolutionDir)/$(SolutionName)/Imgui/imgui-master;$(SolutionDir)/$(SolutionName)/Imgui/imgui-sfml-master;$(SolutionDir)/$(SolutionName);</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -134,7 +134,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>Abseil.lib;sfml-main.lib;sfml-graphics-s.lib;sfml-window-s.lib;sfml-system-s.lib;opengl32.lib;winmm.lib;gdi32.lib;ogg.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)\Imgui Template\SFML-2.5.1\lib;$(OutDir)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)\$(SolutionName)\SFML-2.5.1\lib;$(OutDir)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -147,7 +147,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NOMINMAX;SFML_STATIC;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)/Imgui Template/zlib/zlib-1.2.11;$(SolutionDir)/Imgui Template/abseil/abseil-cpp-master;$(SolutionDir)/Imgui Template/SFML-2.5.1/include;$(SolutionDir)Imgui Template/Imgui/imgui-master;$(SolutionDir)Imgui Template/Imgui/imgui-sfml-master;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)/$(SolutionName)/zlib/zlib-1.2.11;$(SolutionDir)/$(SolutionName)/abseil/abseil-cpp-master;$(SolutionDir)/$(SolutionName)/SFML-2.5.1/include;$(SolutionDir)/$(SolutionName)/Imgui/imgui-master;$(SolutionDir)/$(SolutionName)/Imgui/imgui-sfml-master;$(SolutionDir)/$(SolutionName);</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -155,7 +155,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>Abseil.lib;sfml-main.lib;sfml-graphics-s.lib;sfml-window-s.lib;sfml-system-s.lib;opengl32.lib;winmm.lib;gdi32.lib;ogg.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)\Imgui Template\SFML-2.5.1\lib;$(OutDir)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)\$(SolutionName)\SFML-2.5.1\lib;$(OutDir)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -165,6 +165,15 @@
     <ClCompile Include="Imgui\imgui-master\imgui_widgets.cpp" />
     <ClCompile Include="Imgui\imgui-sfml-master\examples\main.cpp" />
     <ClCompile Include="Imgui\imgui-sfml-master\imgui-SFML.cpp" />
+    <ClCompile Include="MyMod.cpp" />
+    <ClCompile Include="Pos.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Chunk.h" />
+    <ClInclude Include="Constants.h" />
+    <ClInclude Include="Facing.h" />
+    <ClInclude Include="MyMod.h" />
+    <ClInclude Include="Pos.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

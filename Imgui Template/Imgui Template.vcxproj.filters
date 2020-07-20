@@ -16,6 +16,9 @@
     <Filter Include="Header Files\Imgui">
       <UniqueIdentifier>{00965d2a-ea36-4c9b-b8cd-77d143de8b68}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\World">
+      <UniqueIdentifier>{f451f89d-12bb-42da-a786-952b66c8fdf6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Imgui\imgui-sfml-master\examples\main.cpp">
@@ -36,5 +39,28 @@
     <ClCompile Include="Imgui\imgui-master\imgui_widgets.cpp">
       <Filter>Header Files\Imgui</Filter>
     </ClCompile>
+    <ClCompile Include="Pos.cpp">
+      <Filter>Header Files\World</Filter>
+    </ClCompile>
+    <ClCompile Include="MyMod.cpp">
+      <Filter>Header Files\World</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Pos.h">
+      <Filter>Header Files\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Facing.h">
+      <Filter>Header Files\World</Filter>
+    </ClInclude>
+    <ClInclude Include="MyMod.h">
+      <Filter>Header Files\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Constants.h">
+      <Filter>Header Files\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Chunk.h">
+      <Filter>Header Files\World</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
