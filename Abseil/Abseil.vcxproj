@@ -18,9 +18,123 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\abseil-cpp-master\absl\src2\commandlineflag.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src2\flag.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src2\usage.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\address_is_readable.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\arg.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\ascii.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\bad_any_cast.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\bad_optional_access.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\bad_variant_access.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\barrier.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\bind.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\blocking_counter.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\charconv.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\charconv_bigint.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\charconv_parse.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\chi_square.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\city.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\civil_time.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\clock.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\commandlineflag.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\cord.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\create_thread_identity.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\cycleclock.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\demangle.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\discrete_distribution.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\duration.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\dynamic_annotations.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\elf_mem_image.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\escaping.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\escaping_conversions.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\examine_stack.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\exponential_biased.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\extension.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\failure_signal_handler.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\flag.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\float_conversion.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\format.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\gaussian_distribution.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\gaussian_distribution_gentables.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\graphcycles.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\hash.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\hashtablez_sampler.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\hashtablez_sampler_force_weak_definition.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\hash_generator_testing.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\int128.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\leak_check.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\leak_check_disable.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\log_severity.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\low_level_alloc.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\marshalling.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\match.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\memutil.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\mutex.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\notification.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\numbers.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\ostringstream.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\output.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\parse.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\parser.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\periodic_sampler.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\per_thread_sem.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\pool_urbg.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\pow10_helper.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\print_hash_of.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\private_handle_accessor.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\program_name.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\randen.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\randen_detect.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\randen_hwaes.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\randen_round_keys.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\randen_slow.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\raw_hash_set.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\raw_logging.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\reflection.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\scoped_set_env.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\seed_gen_exception.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\seed_material.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\seed_sequences.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\spinlock.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\spinlock_wait.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\stacktrace.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\stack_consumption.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\status.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\status_payload_printer.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\strerror.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\string_view.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\str_cat.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\str_replace.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\str_split.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\substitute.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\symbolize.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\sysinfo.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\test_instance_tracker.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\thread_identity.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\throw_delegate.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\time.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\unscaledcycleclock.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\usage.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\usage_config.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\utf8.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\vdso_support.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\src\waiter.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\time\internal\cctz\src\civil_time_detail.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\time\internal\cctz\src\time_zone_fixed.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\time\internal\cctz\src\time_zone_format.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\time\internal\cctz\src\time_zone_if.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\time\internal\cctz\src\time_zone_impl.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\time\internal\cctz\src\time_zone_info.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\time\internal\cctz\src\time_zone_libc.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\time\internal\cctz\src\time_zone_lookup.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\time\internal\cctz\src\time_zone_posix.cc" />
+    <ClCompile Include="..\abseil-cpp-master\absl\time\internal\cctz\src\zone_info_source.cc" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{99D31FFE-EE36-41DE-A17D-500E368870F5}</ProjectGuid>
+    <ProjectGuid>{7496F960-8F50-4D4D-898F-812A20C19F0B}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>Abseil</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
@@ -93,7 +207,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(SolutionDir)/Imgui Template/abseil/abseil-cpp-master;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)abseil-cpp-master;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -111,7 +225,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(SolutionDir)/Imgui Template/abseil/abseil-cpp-master;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)abseil-cpp-master;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -127,7 +241,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(SolutionDir)/Imgui Template/abseil/abseil-cpp-master;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)abseil-cpp-master;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -145,7 +259,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(SolutionDir)/Imgui Template/abseil/abseil-cpp-master;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)abseil-cpp-master;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -154,76 +268,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\cycleclock.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\exponential_biased.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\low_level_alloc.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\periodic_sampler.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\raw_logging.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\scoped_set_env.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\spinlock.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\spinlock_wait.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\strerror.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\sysinfo.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\thread_identity.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\throw_delegate.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\base\internal\unscaledcycleclock.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\container\internal\hashtablez_sampler.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\container\internal\hashtablez_sampler_force_weak_definition.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\container\internal\raw_hash_set.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\container\internal\test_instance_tracker.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\debugging\stacktrace.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\debugging\symbolize.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\hash\internal\city.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\hash\internal\hash.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\numeric\int128.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\status\status.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\status\status_payload_printer.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\ascii.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\charconv.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\cord.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\escaping.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\charconv_bigint.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\charconv_parse.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\escaping_conversions.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\memutil.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\ostringstream.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\pow10_helper.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\str_format\arg.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\str_format\bind.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\str_format\extension.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\str_format\float_conversion.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\str_format\output.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\str_format\parser.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\internal\utf8.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\match.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\numbers.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\string_view.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\str_cat.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\str_replace.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\str_split.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\strings\substitute.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\synchronization\internal\create_thread_identity.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\synchronization\internal\graphcycles.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\synchronization\internal\per_thread_sem.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\synchronization\internal\waiter.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\synchronization\mutex.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\civil_time.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\clock.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\duration.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\format.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\internal\cctz\src\civil_time_detail.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\internal\cctz\src\time_zone_fixed.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\internal\cctz\src\time_zone_format.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\internal\cctz\src\time_zone_if.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\internal\cctz\src\time_zone_impl.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\internal\cctz\src\time_zone_info.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\internal\cctz\src\time_zone_libc.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\internal\cctz\src\time_zone_lookup.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\internal\cctz\src\time_zone_posix.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\internal\cctz\src\zone_info_source.cc" />
-    <ClCompile Include="..\Imgui Template\abseil\abseil-cpp-master\absl\time\time.cc" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
