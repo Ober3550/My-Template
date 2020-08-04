@@ -25,6 +25,9 @@
     <ClCompile Include="..\imgui-master\imgui_widgets.cpp" />
     <ClCompile Include="..\imgui-sfml-master\imgui-SFML.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\imgui-sfml-master\imgui-SFML.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{66E4C3D8-CAEB-4510-A975-108A6579696A}</ProjectGuid>

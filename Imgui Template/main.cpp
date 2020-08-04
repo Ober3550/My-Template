@@ -41,7 +41,8 @@ int main()
         //ImGui::ShowTestWindow();
         
         ImGui::Begin("Hello, world!");
-        ImGui::Button("Look at this pretty button");
+        if (ImGui::Button("Look at this pretty button"))
+            std::cout << "Hey its rudimentary but it works \n";
         ImGui::End();
 
         window.clear();

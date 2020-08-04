@@ -548,6 +548,16 @@ void SetLStickYAxis(sf::Joystick::Axis lStickYAxis, bool inverted) {
 
 /////////////// Image Overloads
 
+void Image(const sf::Sprite& sprite) {
+    sf::FloatRect bounds = sprite.getLocalBounds();
+    sf::Vector2f scale = sprite.getScale();
+    sf::Color tintColor = sprite.getColor();
+    sf::Color borderColor = sf::Color::Transparent;
+    ImGui::SetCursorPos(ImVec2(sprite.getPosition().x - sprite.getOrigin().x * sprite.getScale().x, sprite.getPosition().y - sprite.getOrigin().y * sprite.getScale().y));
+    Image(sprite, sf::Vector2f(bounds.width * scale.x, bounds.height * scale.y), tintColor,
+        borderColor);
+}
+
 void Image(const sf::Texture& texture, const sf::Color& tintColor,
            const sf::Color& borderColor) {
     Image(texture, static_cast<sf::Vector2f>(texture.getSize()), tintColor,
@@ -605,6 +615,15 @@ void Image(const sf::Sprite& sprite, const sf::Vector2f& size,
 }
 
 /////////////// Image Button Overloads
+
+bool ImageButton(const sf::Sprite& sprite) {
+    sf::FloatRect bounds = sprite.getLocalBounds();
+    sf::Vector2f scale = sprite.getScale();
+    ImGui::SetCursorPos(ImVec2(sprite.getPosition().x - sprite.getOrigin().x * sprite.getScale().x, sprite.getPosition().y - sprite.getOrigin().y * sprite.getScale().y));
+    sf::Color tintColor = sprite.getColor();
+    sf::Color bgColor = sf::Color::Transparent;
+    return ImageButton(sprite, sf::Vector2f(bounds.width * scale.x, bounds.height * scale.y), 0, bgColor, tintColor);
+}
 
 bool ImageButton(const sf::Texture& texture, const int framePadding,
                  const sf::Color& bgColor, const sf::Color& tintColor) {
