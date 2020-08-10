@@ -38,7 +38,7 @@ int main()
 
         ImGui::SFML::Update(window, deltaClock.restart());
 
-        //ImGui::ShowTestWindow();
+        ImGui::ShowDemoWindow();
         
         ImGui::Begin("Hello, world!");
         if (ImGui::Button("Look at this pretty button"))
