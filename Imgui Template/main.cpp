@@ -47,29 +47,7 @@ int main()
         sf::Event event;
         while (window.pollEvent(event)) {
             ImGui::SFML::ProcessEvent(event);
-            if (event.type == sf::Event::KeyPressed)
-            {
-                if (event.key.code == sf::Keyboard::W)
-                    pressed |= KEYW;
-                else if (event.key.code == sf::Keyboard::S)
-                    pressed |= KEYS;
-                else if (event.key.code == sf::Keyboard::A)
-                    pressed |= KEYA;
-                else if (event.key.code == sf::Keyboard::D)
-                    pressed |= KEYD;
-            }
-            else if (event.type == sf::Event::KeyReleased)
-            {
-                if (event.key.code == sf::Keyboard::W)
-                    pressed &= (0xff ^ KEYW);
-                else if (event.key.code == sf::Keyboard::S)
-                    pressed &= (0xff ^ KEYS);
-                else if (event.key.code == sf::Keyboard::A)
-                    pressed &= (0xff ^ KEYA);
-                else if (event.key.code == sf::Keyboard::D)
-                    pressed &= (0xff ^ KEYD);
-            }
-            else if (event.type == sf::Event::MouseMoved)
+            if (event.type == sf::Event::MouseMoved)
             {
                 mousePos = sf::Vector2f(event.mouseMove.x - float(size.x) / 2, event.mouseMove.y - float(size.y) / 2);
             }
@@ -85,7 +63,7 @@ int main()
             {
                 if (event.mouseWheelScroll.delta != 0)
                 {
-                    zoom -= event.mouseWheelScroll.delta * 1.f;
+                    zoom -= event.mouseWheelScroll.delta * 0.5f;
                     if (zoom < minZoom)
                         zoom = minZoom;
                     if (zoom > maxZoom)
@@ -102,21 +80,23 @@ int main()
                 centreView.setCenter(0, 0);
             }
         }
-        const float move_speed = 5.f;
-        for (int i = 0; i < 4; i++)
-        {
-            if ((pressed >> i) & 1)
-            {
-                if (i < 2)
-                    camPos.y += move_speed * zoom * ((i & 1) ? 1.f : -1.f);
-                else
-                    camPos.x += move_speed * zoom * ((i & 1) ? 1.f : -1.f);
-            }
+        const float move_speed = 10.f;
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
+            camPos.y -= move_speed * zoom;
+        }
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
+            camPos.y += move_speed * zoom;
+        }
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)) {
+            camPos.x -= move_speed * zoom;
+        }
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
+            camPos.x += move_speed * zoom;
         }
         if (prevZoom != zoom)
         {
             if (zoom < prevZoom)
-                camPos += (mousePos * prevZoom * 2.f * (prevZoom / zoom));
+                camPos += (mousePos * prevZoom * 0.5f * (prevZoom / zoom));
             centreView.zoom(pow(zoom / prevZoom, 2));
             prevZoom = zoom;
         }
