@@ -19,14 +19,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\imgui-master\imgui.cpp" />
-    <ClCompile Include="..\imgui-master\imgui_demo.cpp" />
-    <ClCompile Include="..\imgui-master\imgui_draw.cpp" />
-    <ClCompile Include="..\imgui-master\imgui_widgets.cpp" />
-    <ClCompile Include="..\imgui-sfml-master\imgui-SFML.cpp" />
+    <ClInclude Include="..\imgui-sfml-master\imgui-SFML.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\imgui-sfml-master\imgui-SFML.h" />
+    <ClCompile Include="..\libraries\imgui-master\imgui.cpp" />
+    <ClCompile Include="..\libraries\imgui-master\imgui_demo.cpp" />
+    <ClCompile Include="..\libraries\imgui-master\imgui_draw.cpp" />
+    <ClCompile Include="..\libraries\imgui-master\imgui_widgets.cpp" />
+    <ClCompile Include="..\libraries\imgui-sfml-master\imgui-SFML.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -103,7 +103,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(SolutionDir)SFML-2.5.1\include;$(SolutionDir)imgui-sfml-master;$(SolutionDir)imgui-master;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)libraries\SFML-2.5.1\include;$(SolutionDir)libraries\imgui-sfml-master;$(SolutionDir)libraries\imgui-master</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -120,7 +120,7 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(SolutionDir)SFML-2.5.1\include;$(SolutionDir)imgui-sfml-master;$(SolutionDir)imgui-master;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)libraries\SFML-2.5.1\include;$(SolutionDir)libraries\imgui-sfml-master;$(SolutionDir)libraries\imgui-master</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -135,7 +135,7 @@
       <PreprocessorDefinitions>NDEBUG;_LIB;SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(SolutionDir)SFML-2.5.1\include;$(SolutionDir)imgui-sfml-master;$(SolutionDir)imgui-master;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)libraries\SFML-2.5.1\include;$(SolutionDir)libraries\imgui-sfml-master;$(SolutionDir)libraries\imgui-master</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -152,7 +152,7 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(SolutionDir)SFML-2.5.1\include;$(SolutionDir)imgui-sfml-master;$(SolutionDir)imgui-master;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)libraries\SFML-2.5.1\include;$(SolutionDir)libraries\imgui-sfml-master;$(SolutionDir)libraries\imgui-master</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

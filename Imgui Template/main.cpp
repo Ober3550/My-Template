@@ -2,8 +2,6 @@
 #include "imgui-SFML.h"
 #include "zlib.h"
 
-#include "absl/container/flat_hash_map.h"
-
 #include <SFML/Graphics.hpp>
 #include <iostream>
 
@@ -12,15 +10,6 @@ int main()
     sf::RenderWindow window(sf::VideoMode(1777, 1000), "ImGui + SFML = <3");
     window.setFramerateLimit(60);
     ImGui::SFML::Init(window);
-
-    absl::flat_hash_map<std::string, std::string> ducks = {{"a", "huey"}, {"b", "dewey"}, {"c", "louie"}};
-    ducks.emplace("d", "brewey");
-    std::string search_key = "d";
-    auto result = ducks.find(search_key);
-
-    if (result != ducks.end()) {
-        std::cout << "Result: " << result->second << std::endl;
-    }
 
     sf::View centreView;
     sf::Vector2u size = window.getSize();
