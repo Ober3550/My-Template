@@ -212,7 +212,7 @@ int main()
             }
 
             // Draw a box
-            //glRotatef(timer, 0, 1, 0);
+            glRotatef(timer, 0, 1, 0);
             //drawSphere();
             drawIcosahedron(divisions,true,true);
             //drawBox(true, true);
