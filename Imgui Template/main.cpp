@@ -17,99 +17,13 @@
 #include <glm/ext/matrix_clip_space.hpp> // glm::perspective
 #include <glm/ext/scalar_constants.hpp> // glm::pi
 #include <glm/gtc/type_ptr.hpp>
+
+#include "Sphere.h"
+#include "Box.h"
 #define M_PI 3.14159265358979323846
 
-void drawSphere(double x, double y, double z, double r, int lats, int longs) {
-    int i, j = 0;
-    for (i = 0; i <= lats; i++) {
-        double lat0 = M_PI * (-0.5 + (double)(i - 1) / lats);
-        double z0 = sin(lat0);
-        double zr0 = cos(lat0);
+static int divisions = 1;
 
-        double lat1 = M_PI * (-0.5 + (double)i / lats);
-        double z1 = sin(lat1);
-        double zr1 = cos(lat1);
-
-        glBegin(GL_QUAD_STRIP);
-        for (j = 0; j <= longs; j++) {
-            double lng = 2 * M_PI * (double)(j - 1) / longs;
-            double x = cos(lng);
-            double y = sin(lng);
-
-            glNormal3f(x * zr0, y * zr0, z0);
-            glVertex3f(r * x * zr0, r * y * zr0, r * z0);
-            glNormal3f(x * zr1, y * zr1, z1);
-            glVertex3f(r * x * zr1, r * y * zr1, r * z1);
-        }
-        glEnd();
-    }
-}
-
-const std::vector<std::array<float, 3>> box_vert = { {
-    {-1.f,-1.f,-1.f},
-    {-1.f,1.f,-1.f},
-    {-1.f,1.f,1.f},
-    {-1.f,-1.f,1.f},
-    {1.f,-1.f,1.f},
-    {1.f,1.f,1.f},
-    {1.f,1.f,-1.f},
-    {1.f,-1.f,-1.f}
-} };
-
-const std::vector<std::array<int, 3>> box_face = { {
-    {0,1,2},
-    {2,3,0},
-    {5,4,3},
-    {3,2,5},
-    {4,5,6},
-    {6,7,4},
-    {1,0,7},
-    {7,6,1},
-    {0,3,4},
-    {4,7,0},
-    {6,5,2},
-    {2,1,6}
-} };
-
-void drawWireFrame(const std::vector<std::array<float, 3>> vert, const std::vector<std::array<int, 3>>& tri)
-{
-    glBegin(GL_LINES);
-    for (int i = 0; i < tri.size(); i++)
-    {
-        glVertex3f(vert[tri[i][0]][0], vert[tri[i][0]][1], vert[tri[i][0]][2]);
-        glVertex3f(vert[tri[i][1]][0], vert[tri[i][1]][1], vert[tri[i][1]][2]);
-        glVertex3f(vert[tri[i][1]][0], vert[tri[i][1]][1], vert[tri[i][1]][2]);
-        glVertex3f(vert[tri[i][2]][0], vert[tri[i][2]][1], vert[tri[i][2]][2]);
-        glVertex3f(vert[tri[i][2]][0], vert[tri[i][2]][1], vert[tri[i][2]][2]);
-        glVertex3f(vert[tri[i][0]][0], vert[tri[i][0]][1], vert[tri[i][0]][2]);
-    }
-    glEnd();
-}
-void drawFilled(const std::vector<std::array<float, 3>>& vert, const std::vector<std::array<int, 3>>& tri)
-{
-    glBegin(GL_TRIANGLES);
-    for (int i = 0; i < tri.size(); i++)
-    {
-        for (int j = 0; j < 3; j++)
-        {
-            glVertex3f(vert[tri[i][j]][0], vert[tri[i][j]][1], vert[tri[i][j]][2]);
-        }
-    }
-    glEnd();
-}
-void drawBox(bool wire, bool filled) {
-    glPushMatrix();
-    if (filled) {
-        glColor3f(1.0, 1.0, 1.0);
-        drawFilled(box_vert, box_face);
-    }
-    if (wire) {
-        glColor3f(0.f, 0.f, 0.f);
-        glScalef(1.01f, 1.01f, 1.01f);
-        drawWireFrame(box_vert, box_face);
-    }
-    glPopMatrix();
-}
 glm::vec3 updateFacing(float pitch, float yaw) {
     glm::vec3 facing;
     facing.x = cos(glm::radians(yaw)) * cos(glm::radians(pitch));
@@ -183,6 +97,7 @@ int main()
     cameraPitch -= 20.f;
     cameraYaw   -= 90.f;
     cameraFront = updateFacing(cameraPitch, cameraYaw);
+    float timer = 0;
 
     window.pushGLStates();
 
@@ -268,29 +183,39 @@ int main()
 
         ImGui::SFML::Update(window, deltaClock.restart());
         ImGui::ShowDemoWindow();
+        ImGui::Begin("Debug");
+        ImGui::SliderInt("Divisions", &divisions, 1, 50);
+        ImGui::End();
 
+        timer++;
         window.clear();
         {
             window.popGLStates();
             glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
             glLoadMatrixf(glm::value_ptr(glm::lookAt(cameraPos, cameraPos + cameraFront, cameraUp)));
 
-            // Draw a white grid "floor" for the tetrahedron to sit on.
-            glColor3f(1.0, 1.0, 1.0);
-            glBegin(GL_LINES);
-            const float lines = 50;
-            const float gap = 0.5;
-            float dist = lines * gap * 0.5;
-            for (GLfloat i = -dist; i <= dist; i += gap) {
-                glNormal3f(0.f, 1.f, 0.f);
-                glVertex3f(i, 0, dist); glVertex3f(i, 0, -dist);
-                glNormal3f(0.f, 1.f, 0.f);
-                glVertex3f(dist, 0, i); glVertex3f(-dist, 0, i);
+            if (false)
+            {
+                // Draw a white grid "floor" for the tetrahedron to sit on.
+                glColor3f(1.0, 1.0, 1.0);
+                glBegin(GL_LINES);
+                const float lines = 50;
+                const float gap = 0.5;
+                float dist = lines * gap * 0.5;
+                for (GLfloat i = -dist; i <= dist; i += gap) {
+                    glNormal3f(0.f, 1.f, 0.f);
+                    glVertex3f(i, 0, dist); glVertex3f(i, 0, -dist);
+                    glNormal3f(0.f, 1.f, 0.f);
+                    glVertex3f(dist, 0, i); glVertex3f(-dist, 0, i);
+                }
+                glEnd();
             }
-            glEnd();
 
             // Draw a box
-            drawBox(true, true);
+            //glRotatef(timer, 0, 1, 0);
+            //drawSphere();
+            drawIcosahedron(divisions,true,true);
+            //drawBox(true, true);
             //drawSphere(0, 0, 0, 2, 10, 10);
 
             glCullFace(GL_FRONT);
