@@ -26,8 +26,11 @@ const std::vector<std::array<int, 3>> box_face = { {
     {2,1,6}
 } };
 
-void drawBox(bool wire, bool filled) {
+void drawBox(glm::vec3 pos, glm::vec3 rot, float scale, bool wire, bool filled = true) {
     Mesh box;
+    box.pos = pos;
+    box.rotation = rot;
+    box.scale = scale;
     box.triangles = box_face;
     box.vertices = box_vert;
     if (filled) {
@@ -36,7 +39,6 @@ void drawBox(bool wire, bool filled) {
     }
     if (wire) {
         glColor3f(0.f, 0.f, 0.f);
-        glScalef(1.01f, 1.01f, 1.01f);
         box.drawWireFrame();
     }
 }

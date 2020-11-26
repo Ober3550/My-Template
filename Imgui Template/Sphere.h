@@ -79,8 +79,11 @@ std::vector<std::array<int, 3>> ico_face = {
     {3,6,9},
     {3,11,7},
 };
-void drawIcosahedron(int divisions, bool wireframe = true, bool normalise = false) {
+void drawIco(glm::vec3 pos, glm::vec3 rot, float scale, int divisions, bool wireframe = true, bool normalise = false) {
     Mesh newMesh;
+    newMesh.pos = pos;
+    newMesh.rotation = rot;
+    newMesh.scale = scale;
     if (divisions > 1) {
         for (int i = 0; i < 20; i++) {
             newMesh = newMesh + divideFace(ico_vert, ico_face, i, divisions);
@@ -93,15 +96,16 @@ void drawIcosahedron(int divisions, bool wireframe = true, bool normalise = fals
     }
     if (normalise) {
         normaliseVerts(newMesh.vertices);
+        float bonus_scale = sqrt(pow(GR, 2) + 1);
+        newMesh.scale *= bonus_scale;
     }
     glColor3f(1.f, 1.f, 1.f);
     newMesh.drawFilled();
     if (wireframe) {
         glColor3f(0.f, 0.f, 0.f);
-        glScalef(1.01f, 1.01f, 1.01f);
         newMesh.drawWireFrame();
     }
 }
-void drawSphere(int divisions = 10, bool wireframe = false) {
-    drawIcosahedron(divisions, wireframe, true);
+void drawSphere(glm::vec3 pos, float scale, int divisions = 10, bool wireframe = false) {
+    drawIco(pos, glm::vec3(0,0,0), scale, divisions, wireframe, true);
 }

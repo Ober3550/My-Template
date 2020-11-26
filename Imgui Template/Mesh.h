@@ -7,6 +7,9 @@
 struct Mesh {
     std::vector<glm::vec3> vertices;
     std::vector<std::array<int, 3>> triangles;
+    glm::vec3 pos;
+    glm::vec3 rotation;
+    float scale;
     Mesh() {
 
     }
@@ -23,6 +26,12 @@ struct Mesh {
     }
     void drawWireFrame()
     {
+        glTranslatef(-pos.x, -pos.y, -pos.z);
+        glRotatef(rotation.x, 1, 0, 0);
+        glRotatef(rotation.y, 0, 1, 0);
+        glRotatef(rotation.z, 0, 0, 1);
+        float scaleWire = scale * 1.01f;
+        glScalef(scaleWire, scaleWire, scaleWire);
         glBegin(GL_LINES);
         for (int i = 0; i < triangles.size(); i++)
         {
@@ -34,17 +43,30 @@ struct Mesh {
             glVertex3f(vertices[triangles[i][0]].x, vertices[triangles[i][0]].y, vertices[triangles[i][0]].z);
         }
         glEnd();
+        glScalef(1 / scaleWire, 1 / scaleWire, 1 / scaleWire);
+        glRotatef(-rotation.x, 1, 0, 0);
+        glRotatef(-rotation.y, 0, 1, 0);
+        glRotatef(-rotation.z, 0, 0, 1);
+        glTranslatef(pos.x, pos.y, pos.z);
     }
     void drawFilled()
     {
+        glTranslatef(-pos.x, -pos.y, -pos.z);
+        glRotatef(rotation.x, 1, 0, 0);
+        glRotatef(rotation.y, 0, 1, 0);
+        glRotatef(rotation.z, 0, 0, 1);
+        glScalef(scale, scale, scale);
         glBegin(GL_TRIANGLES);
-        for (int i = 0; i < triangles.size(); i++)
-        {
-            for (int j = 0; j < 3; j++)
-            {
+        for (int i = 0; i < triangles.size(); i++) {
+            for (int j = 0; j < 3; j++) {
                 glVertex3f(vertices[triangles[i][j]][0], vertices[triangles[i][j]][1], vertices[triangles[i][j]][2]);
             }
         }
         glEnd();
+        glScalef(1 / scale, 1 / scale, 1 / scale);
+        glRotatef(-rotation.x, 1, 0, 0);
+        glRotatef(-rotation.y, 0, 1, 0);
+        glRotatef(-rotation.z, 0, 0, 1);
+        glTranslatef(pos.x, pos.y, pos.z);
     }
 };

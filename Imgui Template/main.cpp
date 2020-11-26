@@ -3,9 +3,6 @@
 #include "zlib.h"
 
 #include <iostream>
-#include <SFML/Graphics.hpp>
-#include <SFML/Window.hpp>
-#include <SFML/OpenGL.hpp>
 #include <array>
 #include <vector>
 
@@ -18,11 +15,20 @@
 #include <glm/ext/scalar_constants.hpp> // glm::pi
 #include <glm/gtc/type_ptr.hpp>
 
+#include <SFML/OpenGL.hpp>
+#include <SFML/Graphics.hpp>
+#include <SFML/Window.hpp>
 #include "Sphere.h"
 #include "Box.h"
 #define M_PI 3.14159265358979323846
 
 static int divisions = 1;
+static bool wireframe = true;
+static bool normalise = true;
+static float scaleBox = 1.f;
+static float scaleIco = 1.f;
+static glm::vec3 posBox = { -2,0,0 };
+static glm::vec3 posIco = { 2,0,0 };
 
 glm::vec3 updateFacing(float pitch, float yaw) {
     glm::vec3 facing;
@@ -37,14 +43,21 @@ int main()
     sf::Clock deltaClock;
     sf::Clock frameClock;
 
-    sf::RenderWindow window(sf::VideoMode(1000, 1000), "ImGui + SFML = <3", sf::Style::Default, sf::ContextSettings(32));
+    sf::ContextSettings settings;
+    settings.depthBits = 32;
+    settings.stencilBits = 8;
+    settings.antialiasingLevel = 4;
+    settings.majorVersion = 3;
+    settings.minorVersion = 3;
+    sf::RenderWindow window(sf::VideoMode(1000, 1000), "ImGui + SFML = <3", sf::Style::Default, settings);
     window.setFramerateLimit(60);
     ImGui::SFML::Init(window);
-
     sf::View centreView;
     sf::Vector2u size = window.getSize();
 
-    // Opengl stuff -------------------------------
+    // Opengl Build Shaders -----------------------------
+
+    // Opengl stuff -------------------------------------
 
     bool cursorGrabbed = false;
     sf::Vector2u windowSize = window.getSize();
@@ -183,8 +196,21 @@ int main()
 
         ImGui::SFML::Update(window, deltaClock.restart());
         ImGui::ShowDemoWindow();
-        ImGui::Begin("Debug");
+        ImGui::Begin("Box");
+        ImGui::SliderFloat("Box: x", &posBox.x, -10, 10);
+        ImGui::SliderFloat("Box: y", &posBox.y, -10, 10);
+        ImGui::SliderFloat("Box: z", &posBox.z, -10, 10);
+        ImGui::SliderFloat("Scale Box", &scaleBox, 0.1, 10);
+        ImGui::End();
+
+        ImGui::Begin("Icosahedron");
+        ImGui::SliderFloat("Ico: x", &posIco.x, -10, 10);
+        ImGui::SliderFloat("Ico: y", &posIco.y, -10, 10);
+        ImGui::SliderFloat("Ico: z", &posIco.z, -10, 10);
+        ImGui::SliderFloat("Scale Ico", &scaleIco, 0.1, 10);
         ImGui::SliderInt("Divisions", &divisions, 1, 50);
+        ImGui::Checkbox("Wireframe", &wireframe);
+        ImGui::Checkbox("Normalise", &normalise);
         ImGui::End();
 
         timer++;
@@ -212,11 +238,8 @@ int main()
             }
 
             // Draw a box
-            glRotatef(timer, 0, 1, 0);
-            //drawSphere();
-            drawIcosahedron(divisions,true,true);
-            //drawBox(true, true);
-            //drawSphere(0, 0, 0, 2, 10, 10);
+            drawBox(posBox, glm::vec3(0, -timer, 0), scaleBox, wireframe);
+            drawIco(posIco, glm::vec3(0, timer, 0), scaleIco, divisions, wireframe, normalise);
 
             glCullFace(GL_FRONT);
             glFlush();
