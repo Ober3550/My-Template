@@ -108,6 +108,7 @@
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NOMINMAX;SFML_STATIC;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(SolutionDir)libraries;$(SolutionDir)libraries/GLAD/include;$(SolutionDir)libraries/glfw-3.3.2/include;$(SolutionDir)libraries/zlib/zlib-1.2.11;$(SolutionDir)libraries/abseil-cpp-master;$(SolutionDir)libraries/SFML-2.5.1/include;$(SolutionDir)libraries/imgui-master;$(SolutionDir)libraries/imgui-sfml-master</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -149,6 +150,7 @@
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(SolutionDir)libraries;$(SolutionDir)libraries/GLAD/include;$(SolutionDir)libraries/glfw-3.3.2/include;$(SolutionDir)libraries/zlib/zlib-1.2.11;$(SolutionDir)libraries/abseil-cpp-master;$(SolutionDir)libraries/SFML-2.5.1/include;$(SolutionDir)libraries/imgui-master;$(SolutionDir)libraries/imgui-sfml-master</AdditionalIncludeDirectories>
       <Optimization>Disabled</Optimization>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -162,11 +164,20 @@
   <ItemGroup>
     <ClCompile Include="..\libraries\GLAD\src\glad.c" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Quaternion.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Box.h" />
     <ClInclude Include="Mesh.h" />
+    <ClInclude Include="Quaternion.h" />
+    <ClInclude Include="shader_m.h" />
+    <ClInclude Include="shader_s.h" />
     <ClInclude Include="Sphere.h" />
+    <ClInclude Include="stb_image.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="fs.glsl" />
+    <None Include="vs.glsl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

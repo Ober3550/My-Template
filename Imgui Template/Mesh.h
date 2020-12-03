@@ -3,6 +3,7 @@
 #include <array>
 #include <glm/vec3.hpp>
 #include <SFML/OpenGL.hpp>
+#include "Quaternion.h"
 
 struct Mesh {
     std::vector<glm::vec3> vertices;
@@ -26,7 +27,7 @@ struct Mesh {
     }
     void drawWireFrame()
     {
-        glTranslatef(-pos.x, -pos.y, -pos.z);
+        glTranslatef(pos.x, pos.y, pos.z);
         glRotatef(rotation.x, 1, 0, 0);
         glRotatef(rotation.y, 0, 1, 0);
         glRotatef(rotation.z, 0, 0, 1);
@@ -47,11 +48,11 @@ struct Mesh {
         glRotatef(-rotation.x, 1, 0, 0);
         glRotatef(-rotation.y, 0, 1, 0);
         glRotatef(-rotation.z, 0, 0, 1);
-        glTranslatef(pos.x, pos.y, pos.z);
+        glTranslatef(-pos.x, -pos.y, -pos.z);
     }
     void drawFilled()
     {
-        glTranslatef(-pos.x, -pos.y, -pos.z);
+        glTranslatef(pos.x, pos.y, pos.z);
         glRotatef(rotation.x, 1, 0, 0);
         glRotatef(rotation.y, 0, 1, 0);
         glRotatef(rotation.z, 0, 0, 1);
@@ -67,6 +68,6 @@ struct Mesh {
         glRotatef(-rotation.x, 1, 0, 0);
         glRotatef(-rotation.y, 0, 1, 0);
         glRotatef(-rotation.z, 0, 0, 1);
-        glTranslatef(pos.x, pos.y, pos.z);
+        glTranslatef(-pos.x, -pos.y, -pos.z);
     }
 };

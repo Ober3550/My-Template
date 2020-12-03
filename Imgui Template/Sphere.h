@@ -1,8 +1,7 @@
 #pragma once
 #include "Mesh.h"
 
-
-Mesh divideFace(std::vector<glm::vec3>& vertices, std::vector<std::array<int, 3>>& triangles, int idx, int div) {
+Mesh divideFace(std::vector<glm::vec3>& vertices, std::vector<std::array<int, 3>>& triangles, int idx, int div, bool accountProjection = false) {
     std::vector<glm::vec3> currentVerts;
     std::vector<glm::vec3> newVerts;
     std::vector<std::array<int, 3>>   newTris;
@@ -79,6 +78,47 @@ std::vector<std::array<int, 3>> ico_face = {
     {3,6,9},
     {3,11,7},
 };
+#define GR 1.61803398875
+float vertices[] = {
+    1.f,  GR, 0.f, // 0
+   -1.f,  GR, 0.f, // 1
+    1.f, -GR, 0.f, // 2
+   -1.f, -GR, 0.f, // 3
+    GR, 0.f,  1.f, // 4
+    GR, 0.f, -1.f, // 5
+   -GR, 0.f,  1.f, // 6
+   -GR, 0.f, -1.f, // 7
+    0.f, 1.f,  GR, // 8
+    0.f,-1.f,  GR, // 9
+    0.f, 1.f, -GR, // 10
+    0.f,-1.f, -GR, // 11
+};
+float indices[] = {
+    5,4,0,
+    1,6,7,
+    2,4,5,
+    7,6,3,
+    9,8,4,
+    5,10,11,
+    6,8,9,
+    11,10,7,
+    1,0,8,
+    9,2,3,
+    10,0,1,
+    3,2,11,
+    0,4,8,
+    10,5,0,
+    1,8,6,
+    1,7,10,
+    2,9,4,
+    5,11,2,
+    3,6,9,
+    3,11,7,
+};
+struct Data {
+    float min;
+    float max;
+};
 void drawIco(glm::vec3 pos, glm::vec3 rot, float scale, int divisions, bool wireframe = true, bool normalise = false) {
     Mesh newMesh;
     newMesh.pos = pos;
@@ -86,7 +126,7 @@ void drawIco(glm::vec3 pos, glm::vec3 rot, float scale, int divisions, bool wire
     newMesh.scale = scale;
     if (divisions > 1) {
         for (int i = 0; i < 20; i++) {
-            newMesh = newMesh + divideFace(ico_vert, ico_face, i, divisions);
+            newMesh = newMesh + divideFace(ico_vert, ico_face, i, divisions, true);
         }
     }
     else
@@ -105,7 +145,29 @@ void drawIco(glm::vec3 pos, glm::vec3 rot, float scale, int divisions, bool wire
         glColor3f(0.f, 0.f, 0.f);
         newMesh.drawWireFrame();
     }
+    for (int i = 0; i < newMesh.triangles.size(); i++) {
+        glm::vec3 veca = newMesh.vertices[newMesh.triangles[i][0]];
+        glm::vec3 vecb = newMesh.vertices[newMesh.triangles[i][1]];
+        glm::vec3 vecc = newMesh.vertices[newMesh.triangles[i][2]];
+        glm::vec3 vecab = vecb - veca;
+        glm::vec3 vecbc = vecc - vecb;
+        glm::vec3 vecca = veca - vecc;
+        float a = sqrt(pow(vecab.x, 2) + pow(vecab.y, 2) + pow(vecab.z, 2));
+        float b = sqrt(pow(vecbc.x, 2) + pow(vecbc.y, 2) + pow(vecbc.z, 2));
+        float c = sqrt(pow(vecca.x, 2) + pow(vecca.y, 2) + pow(vecca.z, 2));
+        float p = (a + b + c) / 2.f;
+        float area = sqrt(p * (p - a) * (p - b) * (p - c));
+    }
 }
 void drawSphere(glm::vec3 pos, float scale, int divisions = 10, bool wireframe = false) {
     drawIco(pos, glm::vec3(0,0,0), scale, divisions, wireframe, true);
+}
+void drawIco(glm::vec3 pos, Quaternion rot, float scale, int divisions, bool wireframe = true, bool normalise = false) {
+    rot = rot / Quaternion::abs(rot);
+    EulerAngles angles = ToEulerAngles(rot);
+    glm::vec3 rotation;
+    rotation.x = angles.pitch;
+    rotation.y = angles.roll;
+    rotation.z = angles.yaw;
+    drawIco(pos, rotation, scale, divisions, wireframe, normalise);
 }

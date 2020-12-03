@@ -42,3 +42,12 @@ void drawBox(glm::vec3 pos, glm::vec3 rot, float scale, bool wire, bool filled =
         box.drawWireFrame();
     }
 }
+
+void drawBox(glm::vec3 pos, Quaternion rot, float scale, bool wire, bool filled = true) {
+    EulerAngles angles = ToEulerAngles(rot);
+    glm::vec3 rotation;
+    rotation.x = angles.pitch;
+    rotation.y = angles.roll;
+    rotation.z = angles.yaw;
+    drawBox(pos, rotation, scale, wire, filled);
+}
