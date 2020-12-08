@@ -7,9 +7,11 @@
 
 #include "stb_image.h"
 #include "shader_m.h"
-
+#include "windows.h"
 #include <iostream>
 #include <filesystem>
+
+#include "Sphere.h"
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void mouse_callback(GLFWwindow* window, double xpos, double ypos);
@@ -85,71 +87,10 @@ int main()
     // ------------------------------------
     Shader ourShader("vs.glsl", "fs.glsl");
 
-    // set up vertex data (and buffer(s)) and configure vertex attributes
-    // ------------------------------------------------------------------
-    #define GR 1.61803398875
-    #define WR 0.18181818181 // The proportion of the width for 10 triangles across
-    #define HR 0.33333333333 // The proportion of the height for 3 bands of triangles
-    float aoff = .0f;
-    float boff = .5f;
-    float toff = -.5f;
-    float uoff = 1.f;
-    float vertices[] = {
-        1.f,  GR, 0.f, (0 + uoff)* WR, 0 * HR,         // 0
-       -1.f,  GR, 0.f, (0 + boff)* WR, 1 * HR,         // 1
-        1.f, -GR, 0.f, (2 + aoff)* WR, 2 * HR,         // 2
-       -1.f, -GR, 0.f, (1 + toff)* WR, 3 * HR,         // 3
-        GR, 0.f,  1.f, (2 + boff)* WR, 1 * HR,         // 4
-        GR, 0.f, -1.f, (3 + boff)* WR, 1 * HR,         // 5
-       -GR, 0.f,  1.f, (0 + aoff)* WR, 2 * HR,         // 6
-       -GR, 0.f, -1.f, (4 + aoff)* WR, 2 * HR,         // 7
-        0.f, 1.f,  GR, (1 + boff)* WR, 1 * HR,         // 8
-        0.f,-1.f,  GR, (1 + aoff)* WR, 2 * HR,         // 9
-        0.f, 1.f, -GR, (4 + boff)* WR, 1 * HR,         // 10
-        0.f,-1.f, -GR, (3 + aoff)* WR, 2 * HR,         // 11
-        // Belt wrap around
-       -1.f,  GR,  0.f, (5 + boff) * WR, 1 * HR,       // 12
-       -GR,  0.f,  1.f, (5 + aoff) * WR, 2 * HR,       // 13
-        // Bottom anti-dupe
-        1.f,  GR, 0.f, (1 + uoff)* WR, 0 * HR,         // 14
-        1.f,  GR, 0.f, (2 + uoff)* WR, 0 * HR,         // 15
-        1.f,  GR, 0.f, (3 + uoff)* WR, 0 * HR,         // 16
-        1.f,  GR, 0.f, (4 + uoff)* WR, 0 * HR,         // 17
-        // Top anti-dupe
-       -1.f, -GR, 0.f, (2 + toff)* WR, 3 * HR,         // 18
-       -1.f, -GR, 0.f, (3 + toff)* WR, 3 * HR,         // 19
-       -1.f, -GR, 0.f, (4 + toff)* WR, 3 * HR,         // 20
-       -1.f, -GR, 0.f, (5 + toff)* WR, 3 * HR,         // 21
-    };
-    unsigned int indices[] = {
-        // Top
-        3,6,9,
-        18,9,2,
-        19,2,11,
-        20,11,7,
-        21,7,13,
-        // Bottom
-        0,8,1,
-        14,4,8,
-        15,5,4,
-        16,10,5,
-        17,12,10,
-        // Belt
-        8,1,6,
-        8,6,9,
-        8,9,4,
-        9,2,4,
-        4,2,5,
-        5,2,11,
-        10,5,11,
-        10,11,7,
-        7,12,10,
-        12,13,7,
-    };
     // world space positions of our cubes
     std::vector<glm::vec3> cubePositions = {
-        glm::vec3(0.0f,  0.0f,  0.0f),
-        /*glm::vec3(2.0f,  5.0f, -15.0f),
+        glm::vec3(0.0f,  0.0f,  0.0f),/*
+        glm::vec3(2.0f,  5.0f, -15.0f),
         glm::vec3(-1.5f, -2.2f, -2.5f),
         glm::vec3(-3.8f, -2.0f, -12.3f),
         glm::vec3(2.4f, -0.4f, -3.5f),
@@ -159,16 +100,18 @@ int main()
         glm::vec3(1.5f,  0.2f, -1.5f),
         glm::vec3(-1.3f,  1.0f, -1.5f)*/
     };
+    
     unsigned int VBO, VAO, EBO;
     glGenVertexArrays(1, &VAO);
     glGenBuffers(1, &VBO);
     glGenBuffers(1, &EBO);
+    BasicMesh sphere = drawIco(10, true);
 
     glBindVertexArray(VAO);
     glBindBuffer(GL_ARRAY_BUFFER, VBO);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+    glBufferData(GL_ARRAY_BUFFER, sphere.vert_uvs.size() * 4, sphere.vert_uvs.data(), GL_STATIC_DRAW);
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sphere.faces.size() * 4, sphere.faces.data(), GL_STATIC_DRAW);
 
     // position attribute
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)0);
@@ -222,6 +165,7 @@ int main()
         float currentFrame = glfwGetTime();
         deltaTime = currentFrame - lastFrame;
         lastFrame = currentFrame;
+        Sleep(16);
 
         // input
         // -----
@@ -255,11 +199,11 @@ int main()
             // calculate the model matrix for each object and pass it to shader before drawing
             glm::mat4 model = glm::mat4(1.0f); // make sure to initialize matrix to identity matrix first
             model = glm::translate(model, cubePositions[i]);
-            float angle = 20.0f * i;
-            model = glm::rotate(model, glm::radians(angle), glm::vec3(1.0f, 0.3f, 0.5f));
+            model = glm::rotate(model, float(1.18*3.14), glm::vec3(0.0f, 0.0f, 1.f));
+            model = glm::rotate(model, float(fmod(glfwGetTime(), 2*3.14)), glm::vec3(1.0f, 1.0f, 0.0f));
             ourShader.setMat4("model", model);
 
-            glDrawElements(GL_TRIANGLES, sizeof(indices), GL_UNSIGNED_INT, 0);
+            glDrawElements(GL_TRIANGLES, sphere.faces.size() * 4, GL_UNSIGNED_INT, 0);
         }
 
         // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
