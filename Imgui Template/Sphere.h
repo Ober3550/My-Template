@@ -36,29 +36,30 @@ std::vector<glm::vec3> ico_vert = {
        {-1.f, -GR, 0.f},    // 20
        {-1.f, -GR, 0.f},    // 21
 };
+float tol = 0.004f;
 std::vector<glm::vec2> ico_uvs = {
-    {(4 + uoff) * WR, 0 * HR},  // 0
-    {(5 + boff) * WR, 1 * HR},  // 1
-    {(3 + aoff) * WR, 2 * HR},  // 2
-    {(5 + toff) * WR, 3 * HR},  // 3
-    {(3 + boff) * WR, 1 * HR},  // 4
-    {(2 + boff) * WR, 1 * HR},  // 5
-    {(5 + aoff) * WR, 2 * HR},  // 6
-    {(1 + aoff) * WR, 2 * HR},  // 7
-    {(4 + boff) * WR, 1 * HR},  // 8
-    {(4 + aoff) * WR, 2 * HR},  // 9
-    {(1 + boff) * WR, 1 * HR},  // 10
-    {(2 + aoff) * WR, 2 * HR},  // 11
-    {(0 + boff) * WR, 1 * HR},  // 12
-    {(0 + aoff) * WR, 2 * HR},  // 13
-    {(3 + uoff) * WR, 0 * HR},  // 14
-    {(2 + uoff) * WR, 0 * HR},  // 15
-    {(1 + uoff) * WR, 0 * HR},  // 16
-    {(0 + uoff) * WR, 0 * HR},  // 17
-    {(4 + toff) * WR, 3 * HR},  // 18
-    {(3 + toff) * WR, 3 * HR},  // 19
-    {(2 + toff) * WR, 3 * HR},  // 20
-    {(1 + toff) * WR, 3 * HR},  // 21
+    {(4 + uoff) * WR,       0 * HR + tol},  // 0
+    {(5 + boff) * WR - tol, 1 * HR + tol},  // 1
+    {(3 + aoff) * WR,       2 * HR - tol},  // 2
+    {(5 + toff) * WR,       3 * HR - tol},  // 3
+    {(3 + boff) * WR,       1 * HR + tol},  // 4
+    {(2 + boff) * WR,       1 * HR + tol},  // 5
+    {(5 + aoff) * WR - tol, 2 * HR - tol},  // 6
+    {(1 + aoff) * WR,       2 * HR - tol},  // 7
+    {(4 + boff) * WR,       1 * HR + tol},  // 8
+    {(4 + aoff) * WR,       2 * HR - tol},  // 9
+    {(1 + boff) * WR,       1 * HR + tol},  // 10
+    {(2 + aoff) * WR,       2 * HR - tol},  // 11
+    {(0 + boff) * WR + tol, 1 * HR + tol},  // 12
+    {(0 + aoff) * WR + tol, 2 * HR - tol},  // 13
+    {(3 + uoff) * WR,       0 * HR + tol},  // 14
+    {(2 + uoff) * WR,       0 * HR + tol},  // 15
+    {(1 + uoff) * WR,       0 * HR + tol},  // 16
+    {(0 + uoff) * WR,       0 * HR + tol},  // 17
+    {(4 + toff) * WR,       3 * HR - tol},  // 18
+    {(3 + toff) * WR,       3 * HR - tol},  // 19
+    {(2 + toff) * WR,       3 * HR - tol},  // 20
+    {(1 + toff) * WR,       3 * HR - tol},  // 21
 };
 std::vector<std::array<uint32_t,3>> ico_face = {
     // Top

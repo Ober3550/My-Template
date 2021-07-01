@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
+<script>
+let original_image;
+let filename = 'mars';
+function preload(){
+    og_image = loadImage('small/'+filename+'.jpg');
+}
+class color{
+    constructor(r,g,b){
+        this.r = r;
+        this.g = g;
+        this.b = b;
+    }
+}
+function averageColor(colors){
+    let r = 0;
+    let g = 0;
+    let b = 0;
+    for(let i=0;i<colors.length;i++){
+        r+=colors[i].r;
+        g+=colors[i].g;
+        b+=colors[i].b;
+    }
+    if(colors.length > 0){
+        r /= colors.length;
+        g /= colors.length;
+        b /= colors.length;
+    }
+    return new color(r,g,b);
+}
+function map(input,a,b,c,d){
+    return (input-a)*(d-c)/(b-a)+c;
+}
+function setup() {
+    let c = createCanvas(windowWidth, windowHeight);    
+    background(0);
+    image(og_image,0,0);
+    loadPixels();
+    console.log(og_image.width, og_image.height);
+    for(let j=0;j<og_image.height;j++){
+        
+        // Offset the image diagonally with the extra space on the canvas
+        let offset = 0;
+        if(j > og_image.height/3){
+            // Map the j height value from 1/3 to 2/3 between 0 and image width / 10
+            offset = Math.floor(map(j,og_image.height/3,og_image.height*2/3,0,og_image.width/10));
+            // For j greater than 2/3 set the offset to be constant image width / 10
+            if(j>og_image.height*2/3){
+                offset = og_image.width/10;
+            }
+            for(let i=0;i<offset;i++){
+                // Swap right side pixel with left side according to number of offset pixels
+                let index = og_image.width+i;
+                let tr = pixels[(j*width+index)*4+0];
+                let tg = pixels[(j*width+index)*4+1];
+                let tb = pixels[(j*width+index)*4+2];
+                pixels[(j*width+index)*4+0] = pixels[(j*width+i)*4+0];
+                pixels[(j*width+index)*4+1] = pixels[(j*width+i)*4+1];
+                pixels[(j*width+index)*4+2] = pixels[(j*width+i)*4+2];
+                pixels[(j*width+i)*4+0] = tr;
+                pixels[(j*width+i)*4+1] = tg;
+                pixels[(j*width+i)*4+2] = tb;
+            }
+        }
+        // Project the top and bottom thirds
+        if(j<og_image.height/3
+        || j>og_image.height*2/3
+            ){
+            let projection = [];
+            let prop;
+            let triangles;
+            let proj_offset = 0;
+            // Calculate the number of pixels for a given triangle row
+            if(j>og_image.height*2/3){
+                proj_offset = og_image.width/10;
+            }
+            if(j < og_image.height/3){
+                prop = 3*j/og_image.height;
+                triangles = (prop*og_image.width/5);
+            }
+            else{
+                prop = 3*(og_image.height-j)/og_image.height;
+                triangles = (prop*og_image.width/5);
+            }
+            // Collect pixel color values
+            for(let i=0;i<og_image.width;i++){
+                let pixel = new color(pixels[(j*width+i+proj_offset)*4+0],pixels[(j*width+i+proj_offset)*4+1],pixels[(j*width+i+proj_offset)*4+2]);
+                let index = Math.floor((5*i*triangles)/og_image.width);
+                if(index < projection.length){
+                    projection[index].push(pixel);
+                }
+                else{
+                    let empty = [];
+                    projection.push(empty);
+                    projection[index].push(pixel);
+                }
+            }
+            // Clear the regions so that they can be drawn back to
+            for(let i=0;i<width;i++){
+                pixels[(j*width+i)*4+0] = 0;
+                pixels[(j*width+i)*4+1] = 0;
+                pixels[(j*width+i)*4+2] = 0;
+            }
+            // Calculate the average for each pixel region
+            for(let n=0;n<projection.length;n++){
+                projection[n] = averageColor(projection[n]);
+            }
+            // Construct the triangles
+            for(let m=0;m<5;m++){
+                let divs = projection.length/5;
+                for(let n=0;n<divs;n++){
+                    let index = Math.floor(m*divs + n);
+                    let screen = Math.floor(og_image.width/5 * m + (og_image.width/10) - (divs/2) + n);
+                    pixels[(j*width+screen+proj_offset)*4+0] = projection[index].r;
+                    pixels[(j*width+screen+proj_offset)*4+1] = projection[index].g;
+                    pixels[(j*width+screen+proj_offset)*4+2] = projection[index].b;
+                }
+            }
+        }
+        
+    }
+    updatePixels();
+    saveCanvas(c,'ico'+filename,'png');
+}
+function draw() {
+    
+}
+function windowResized() {
+
+}
+</script>
+</head>
+<body style="margin: 0">
+</body>
+</html>

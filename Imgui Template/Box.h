@@ -2,52 +2,150 @@
 #include "Mesh.h"
 
 const std::vector<glm::vec3> box_vert = { {
-    {-1.f,-1.f,-1.f},
-    {-1.f,1.f,-1.f},
-    {-1.f,1.f,1.f},
-    {-1.f,-1.f,1.f},
-    {1.f,-1.f,1.f},
-    {1.f,1.f,1.f},
-    {1.f,1.f,-1.f},
-    {1.f,-1.f,-1.f}
-} };
-const std::vector<std::array<int, 3>> box_face = { {
-    {0,1,2},
-    {2,3,0},
-    {5,4,3},
-    {3,2,5},
-    {4,5,6},
-    {6,7,4},
-    {1,0,7},
-    {7,6,1},
-    {0,3,4},
-    {4,7,0},
-    {6,5,2},
-    {2,1,6}
+    {-0.5f, -0.5f, -0.5f},
+    { 0.5f, -0.5f, -0.5f},
+    { 0.5f,  0.5f, -0.5f},
+    { 0.5f,  0.5f, -0.5f},
+    {-0.5f,  0.5f, -0.5f},
+    {-0.5f, -0.5f, -0.5f},
+    
+    {-0.5f, -0.5f,  0.5f},
+    { 0.5f, -0.5f,  0.5f},
+    { 0.5f,  0.5f,  0.5f},
+    { 0.5f,  0.5f,  0.5f},
+    {-0.5f,  0.5f,  0.5f},
+    {-0.5f, -0.5f,  0.5f},
+    
+    {-0.5f,  0.5f,  0.5f},
+    {-0.5f,  0.5f, -0.5f},
+    {-0.5f, -0.5f, -0.5f},
+    {-0.5f, -0.5f, -0.5f},
+    {-0.5f, -0.5f,  0.5f},
+    {-0.5f,  0.5f,  0.5f},
+    
+    { 0.5f,  0.5f,  0.5f},
+    { 0.5f,  0.5f, -0.5f},
+    { 0.5f, -0.5f, -0.5f},
+    { 0.5f, -0.5f, -0.5f},
+    { 0.5f, -0.5f,  0.5f},
+    { 0.5f,  0.5f,  0.5f},
+    
+    {-0.5f, -0.5f, -0.5f},
+    { 0.5f, -0.5f, -0.5f},
+    { 0.5f, -0.5f,  0.5f},
+    { 0.5f, -0.5f,  0.5f},
+    {-0.5f, -0.5f,  0.5f},
+    {-0.5f, -0.5f, -0.5f},
+    
+    {-0.5f,  0.5f, -0.5f},
+    { 0.5f,  0.5f, -0.5f},
+    { 0.5f,  0.5f,  0.5f},
+    { 0.5f,  0.5f,  0.5f},
+    {-0.5f,  0.5f,  0.5f},
+    {-0.5f,  0.5f, -0.5f},
 } };
 
-void drawBox(glm::vec3 pos, glm::vec3 rot, float scale, bool wire, bool filled = true) {
+const std::vector<std::array<uint32_t, 3>> box_face = { {
+    {0,1,2},
+    {3,4,5},
+    {6,7,8},
+    {9,10,11},
+    {12,13,14},
+    {15,16,17},
+    {18,19,20},
+    {21,22,23},
+    {24,25,26},
+    {27,28,29},
+    {30,31,32},
+    {33,34,35}
+} };
+const std::vector<glm::vec2> box_uvs = { {
+    {0.0f, 0.0f},
+    {1.0f, 0.0f},
+    {1.0f, 1.0f},
+    {1.0f, 1.0f},
+    {0.0f, 1.0f},
+    {0.0f, 0.0f},
+    {0.0f, 0.0f},
+    {1.0f, 0.0f},
+    {1.0f, 1.0f},
+    {1.0f, 1.0f},
+    {0.0f, 1.0f},
+    {0.0f, 0.0f},
+    {1.0f, 0.0f},
+    {1.0f, 1.0f},
+    {0.0f, 1.0f},
+    {0.0f, 1.0f},
+    {0.0f, 0.0f},
+    {1.0f, 0.0f},
+    {1.0f, 0.0f},
+    {1.0f, 1.0f},
+    {0.0f, 1.0f},
+    {0.0f, 1.0f},
+    {0.0f, 0.0f},
+    {1.0f, 0.0f},
+    {0.0f, 1.0f},
+    {1.0f, 1.0f},
+    {1.0f, 0.0f},
+    {1.0f, 0.0f},
+    {0.0f, 0.0f},
+    {0.0f, 1.0f},
+    {0.0f, 1.0f},
+    {1.0f, 1.0f},
+    {1.0f, 0.0f},
+    {1.0f, 0.0f},
+    {0.0f, 0.0f},
+    {0.0f, 1.0f},
+} };
+const std::vector<glm::vec3> box_normals = { {
+    { 0.0f,  0.0f, -1.0f},
+    { 0.0f,  0.0f, -1.0f},
+    { 0.0f,  0.0f, -1.0f},
+    { 0.0f,  0.0f, -1.0f},
+    { 0.0f,  0.0f, -1.0f},
+    { 0.0f,  0.0f, -1.0f},
+
+    { 0.0f,  0.0f,  1.0f},
+    { 0.0f,  0.0f,  1.0f},
+    { 0.0f,  0.0f,  1.0f},
+    { 0.0f,  0.0f,  1.0f},
+    { 0.0f,  0.0f,  1.0f},
+    { 0.0f,  0.0f,  1.0f},
+
+    {-1.0f,  0.0f,  0.0f},
+    {-1.0f,  0.0f,  0.0f},
+    {-1.0f,  0.0f,  0.0f},
+    {-1.0f,  0.0f,  0.0f},
+    {-1.0f,  0.0f,  0.0f},
+    {-1.0f,  0.0f,  0.0f},
+
+    { 1.0f,  0.0f,  0.0f},
+    { 1.0f,  0.0f,  0.0f},
+    { 1.0f,  0.0f,  0.0f},
+    { 1.0f,  0.0f,  0.0f},
+    { 1.0f,  0.0f,  0.0f},
+    { 1.0f,  0.0f,  0.0f},
+
+    { 0.0f, -1.0f,  0.0f},
+    { 0.0f, -1.0f,  0.0f},
+    { 0.0f, -1.0f,  0.0f},
+    { 0.0f, -1.0f,  0.0f},
+    { 0.0f, -1.0f,  0.0f},
+    { 0.0f, -1.0f,  0.0f},
+
+    { 0.0f,  1.0f,  0.0f},
+    { 0.0f,  1.0f,  0.0f},
+    { 0.0f,  1.0f,  0.0f},
+    { 0.0f,  1.0f,  0.0f},
+    { 0.0f,  1.0f,  0.0f},
+    { 0.0f,  1.0f,  0.0f}
+} };
+
+BasicMesh drawBox() {
     Mesh box;
-    box.pos = pos;
-    box.rotation = rot;
-    box.scale = scale;
     box.triangles = box_face;
     box.vertices = box_vert;
-    if (filled) {
-        glColor3f(1.0, 1.0, 1.0);
-        box.drawFilled();
-    }
-    if (wire) {
-        glColor3f(0.f, 0.f, 0.f);
-        box.drawWireFrame();
-    }
-}
-
-void drawBox(glm::vec3 pos, Quaternion rot, float scale, bool wire, bool filled = true) {
-    EulerAngles angles = ToEulerAngles(rot);
-    glm::vec3 rotation;
-    rotation.x = angles.pitch;
-    rotation.y = angles.roll;
-    rotation.z = angles.yaw;
-    drawBox(pos, rotation, scale, wire, filled);
+    box.uvs = box_uvs;
+    box.normals = box_normals;
+    return box.getBasicMesh();
 }

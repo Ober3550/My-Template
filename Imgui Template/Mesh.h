@@ -13,6 +13,7 @@ struct Mesh {
     std::vector<glm::vec3> vertices;
     std::vector<glm::vec2> uvs;
     std::vector<std::array<uint32_t, 3>> triangles;
+    std::vector<glm::vec3> normals;
     glm::vec3 pos;
     glm::vec3 rotation;
     float scale;
@@ -81,17 +82,52 @@ struct Mesh {
     }
     BasicMesh getBasicMesh() {
         BasicMesh new_mesh;
+        /*
         for (int i = 0; i < this->vertices.size(); i++) {
             new_mesh.vert_uvs.push_back(this->vertices[i].x);
             new_mesh.vert_uvs.push_back(this->vertices[i].y);
             new_mesh.vert_uvs.push_back(this->vertices[i].z);
+
+            if (this->normals.size() == 0) {
+                glm::vec3 normal = this->vertices[i];
+                float mag = sqrt(pow(normal.x, 2) + pow(normal.y, 2) + pow(normal.z, 2));
+                normal /= mag;
+                //new_mesh.vert_uvs.push_back(normal.x);
+                //new_mesh.vert_uvs.push_back(normal.y);
+                //new_mesh.vert_uvs.push_back(normal.z);
+
+                new_mesh.vert_uvs.push_back(1.f);
+                new_mesh.vert_uvs.push_back(1.f);
+                new_mesh.vert_uvs.push_back(1.f);
+            }
+            else {
+                new_mesh.vert_uvs.push_back(this->normals[i].x);
+                new_mesh.vert_uvs.push_back(this->normals[i].y);
+                new_mesh.vert_uvs.push_back(this->normals[i].z);
+            }
+
             new_mesh.vert_uvs.push_back(this->uvs[i].x);
             new_mesh.vert_uvs.push_back(this->uvs[i].y);
         }
+        */
         for (int i = 0; i < this->triangles.size(); i++) {
-            new_mesh.faces.push_back(this->triangles[i][0]);
-            new_mesh.faces.push_back(this->triangles[i][1]);
-            new_mesh.faces.push_back(this->triangles[i][2]);
+            for (int j = 0; j < 3; j++) {
+                int index = this->triangles[i][j];
+                // Push vertices
+                new_mesh.vert_uvs.push_back(this->vertices[index].x);
+                new_mesh.vert_uvs.push_back(this->vertices[index].y);
+                new_mesh.vert_uvs.push_back(this->vertices[index].z);
+                // Push normals
+                glm::vec3 normal = this->vertices[index];
+                float mag = sqrt(pow(normal.x, 2) + pow(normal.y, 2) + pow(normal.z, 2));
+                normal /= mag;
+                new_mesh.vert_uvs.push_back(normal.x);
+                new_mesh.vert_uvs.push_back(normal.y);
+                new_mesh.vert_uvs.push_back(normal.z);
+                // Push Uvs
+                new_mesh.vert_uvs.push_back(this->uvs[index].x);
+                new_mesh.vert_uvs.push_back(this->uvs[index].y);
+            }
         }
         return new_mesh;
     }

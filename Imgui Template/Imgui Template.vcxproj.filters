@@ -47,12 +47,21 @@
     <ClInclude Include="shader_s.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="fs.glsl">
       <Filter>Source Files</Filter>
     </None>
     <None Include="vs.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="lightsource_vs.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="lightsource_fs.glsl">
       <Filter>Source Files</Filter>
     </None>
   </ItemGroup>
